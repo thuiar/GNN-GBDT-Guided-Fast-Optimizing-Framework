@@ -1,5 +1,9 @@
 ## GNN&GBDT-Guided Fast Optimizing Framework for Large-scale Integer Programming
 
+## Contact
+
+Welcome to academic and business collaborations with funding support. For more details, please contact us via email at [xuhua@tsinghua.edu.cn](mailto:xuhua@tsinghua.edu.cn).
+
 ### Overview
 
 This release contains the key processes of the GNN&GBDT-Guided Fast Optimizing Framework, as described in the paper. The provided code implements the main components of the approach, covering data generation, training, and inference. We also provide interfaces that are left to be implemented by the user so that the code can be flexibly used in different contexts.
@@ -55,6 +59,4 @@ If you use the code here please cite this paper:
       year={2023}
     }
 
-## Contact
 
-Welcome to academic and business collaborations with funding support. For more details, please contact us via email at [xuhua@tsinghua.edu.cn](mailto:xuhua@tsinghua.edu.cn).
