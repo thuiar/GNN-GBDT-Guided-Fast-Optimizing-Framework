@@ -1,6 +1,6 @@
 ## GNN&GBDT-Guided Fast Optimizing Framework for Large-scale Integer Programming
 
-## Contact
+### Contact
 
 Welcome to academic and business collaborations with funding support. For more details, please contact us via email at [xuhua@tsinghua.edu.cn](mailto:xuhua@tsinghua.edu.cn).
 
@@ -25,11 +25,11 @@ The following gives a brief overview of the contents; more detailed documentatio
 *   __Result/SC__: Running results of the very large-scale version of the Set Covering problem.
 *   __Paper/paper.pdf__: PDF version of the paper.
 
-## Requirements
+### Requirements
 
 The required environment is shown in GNN_GBDT.yml.
 
-## Usage
+### Usage
 
 1. Implement the interfaces respectively.
 
@@ -46,7 +46,7 @@ The required environment is shown in GNN_GBDT.yml.
 
 3. Run tests with test.py.
 
-## Citing this work
+### Citing this work
 
 Paper: [GNN&GBDT-Guided Fast Optimizing Framework for Large-scale Integer Programming](https://openreview.net/pdf?id=tX7ajV69wt)
 
