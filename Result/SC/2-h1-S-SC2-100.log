@@ -1,0 +1,82 @@
+nohup: ignoring input
+feasible solution found by trivial heuristic after 26.5 seconds, objective value 3.983191e+02
+presolving:
+(round 1, fast)       17431 del vars, 15004 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 2984987 clqs
+(round 2, fast)       25267 del vars, 59925 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 2940066 clqs
+   (77.7s) running MILP presolver
+   (90.4s) MILP presolver (2 rounds): 0 aggregations, 195 fixings, 0 bound changes
+(round 3, exhaustive) 25989 del vars, 62494 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 2937506 clqs
+(round 4, exhaustive) 25992 del vars, 62497 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 2937503 upgd conss, 0 impls, 2937503 clqs
+   (190.3s) probing: 51/974008 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (190.3s) probing aborted: 50/50 successive totally useless probings
+   (199.5s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (214.0s) no symmetry present
+presolving (5 rounds: 5 fast, 3 medium, 3 exhaustive):
+ 25992 deleted vars, 62497 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 2937503 cliques
+presolved problem has 974008 variables (974008 bin, 0 int, 0 impl, 0 cont) and 2937503 constraints
+2937503 constraints of type <setppc>
+Presolving Time: 205.12
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 228s|     1 |     0 |     0 |     - | trivial|   0 | 974k|2937k|   0 |   0 |  0 |   0 |   0 | 4.952963e+05 | 9.025819e+03 |5387.55%| unknown
+p 468m|     1 |     0 |     0 |     - |   locks|   0 | 974k|2937k|2937k|   0 |  0 |   0 |   0 | 4.952963e+05 | 1.858086e+05 | 166.56%| unknown
+i 489m|     1 |     0 |  1126 |     - |  oneopt|   0 | 974k|2937k|2937k|   0 |  0 |   0 |   0 | 4.952963e+05 | 1.884205e+05 | 162.87%| unknown
+  999m|     1 |     0 |  1224k|     - |  9844M |   0 | 974k|2937k|2937k|   0 |  0 |   0 |   0 | 4.952963e+05 | 1.884205e+05 | 162.87%| unknown
+(node 1) LP solver hit time limit in LP 2 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 59936.37
+Solving Nodes      : 1
+Primal Bound       : +1.88420496002484e+05 (5 solutions)
+Dual Bound         : +4.95296290213063e+05
+Gap                : 162.87 %
+0.0
+[60132.21912121773]
+[188420.496002484]
+nohup: ignoring input
+nohup: ignoring input
+No problem file!
+Traceback (most recent call last):
+  File "/home/yehuigen/GNN_GBDT/08-SC2-SCIP.py", line 481, in <module>
+    optimize(**vars(args))
+  File "/home/yehuigen/GNN_GBDT/08-SC2-SCIP.py", line 238, in optimize
+    with open('./example-SC-h/node1.pickle', "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './example-SC-h/node1.pickle'
+nohup: ignoring input
+feasible solution found by trivial heuristic after 23.7 seconds, objective value 9.876481e+05
+presolving:
+(round 1, fast)       36806 del vars, 0 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (61.1s) running MILP presolver
+   (69.1s) MILP presolver found nothing
+(round 2, exhaustive) 36806 del vars, 0 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 2000000 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       132962 del vars, 1 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 2000000 upgd conss, 0 impls, 0 clqs
+(round 4, fast)       134745 del vars, 1 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 96152 chg coeffs, 2000000 upgd conss, 0 impls, 37 clqs
+(round 5, exhaustive) 138451 del vars, 57 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 98058 chg coeffs, 2000000 upgd conss, 0 impls, 1931 clqs
+   (164.1s) probing: 51/1861533 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (164.1s) probing aborted: 50/50 successive totally useless probings
+   (171.4s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (184.4s) no symmetry present
+presolving (6 rounds: 6 fast, 3 medium, 3 exhaustive):
+ 138479 deleted vars, 57 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 101639 changed coefficients
+ 0 implications, 2028 cliques
+presolved problem has 1861533 variables (1861533 bin, 0 int, 0 impl, 0 cont) and 1999943 constraints
+1999943 constraints of type <logicor>
+Presolving Time: 180.11
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 202s|     1 |     0 |     0 |     - | trivial|   0 |1861k|1999k|   0 |   0 |  0 |   0 |   0 | 2.666364e+00 | 9.193624e+05 |  Large | unknown
+p7332s|     1 |     0 |     0 |     - |   locks|   0 |1861k|1999k|1999k|   0 |  0 |   0 |   0 | 2.666364e+00 | 2.535118e+05 |  Large | unknown
+i7338s|     1 |     0 |     0 |     - |  oneopt|   0 |1861k|1999k|1999k|   0 |  0 |   0 |   0 | 2.666364e+00 | 2.521799e+05 |  Large | unknown
+  999m|     1 |     0 |753936 |     - |    10G |   0 |1861k|1999k|1999k|   0 |  0 |   0 |   0 | 2.666364e+00 | 2.521799e+05 |  Large | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 59942.29
+Solving Nodes      : 1
+Primal Bound       : +2.52179898788591e+05 (5 solutions)
+Dual Bound         : +2.66636350119586e+00
+Gap                : 9457721.44 %
+0.0
+[60210.22903895378]
+[252179.89878859147]

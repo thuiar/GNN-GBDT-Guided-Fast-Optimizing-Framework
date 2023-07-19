@@ -1,0 +1,2290 @@
+nohup: ignoring input
+feasible solution found by trivial heuristic after 7.7 seconds, objective value 3.229416e+02
+presolving:
+(round 1, fast)       522163 del vars, 1368329 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 813956 clqs
+(round 2, fast)       585117 del vars, 1436974 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 745311 clqs
+(round 3, fast)       610734 del vars, 1498618 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 683668 clqs
+(round 4, fast)       618894 del vars, 1512415 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 669871 clqs
+(round 5, fast)       622801 del vars, 1521054 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 661232 clqs
+(round 6, fast)       624213 del vars, 1523661 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 658625 clqs
+(round 7, fast)       624790 del vars, 1524882 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 657404 clqs
+   (18.4s) running MILP presolver
+   (19.7s) MILP presolver (2 rounds): 0 aggregations, 116 fixings, 0 bound changes
+(round 8, medium)     625145 del vars, 1525354 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 656643 clqs
+(round 9, exhaustive) 625206 del vars, 1525706 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 656580 upgd conss, 0 impls, 656582 clqs
+   (32.1s) probing: 51/374766 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (32.1s) probing aborted: 50/50 successive totally useless probings
+   (33.2s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (35.1s) no symmetry present
+presolving (10 rounds: 10 fast, 3 medium, 2 exhaustive):
+ 625234 deleted vars, 1525756 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 656527 cliques
+presolved problem has 374766 variables (374766 bin, 0 int, 0 impl, 0 cont) and 656527 constraints
+ 656527 constraints of type <setppc>
+Presolving Time: 30.62
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t37.2s|     1 |     0 |     0 |     - | trivial|   0 | 374k| 656k|   0 |   0 |  0 |   0 |   0 | 2.972049e+05 | 5.789841e+04 | 413.32%| unknown
+p2795s|     1 |     0 | 49172 |     - |  clique|   0 | 374k| 656k| 656k|   0 |  0 |   0 |   0 | 2.972049e+05 | 1.616572e+05 |  83.85%| unknown
+p3990s|     1 |     0 | 49172 |     - |   locks|   0 | 374k| 656k| 656k|   0 |  0 |   0 |   0 | 2.972049e+05 | 1.616594e+05 |  83.85%| unknown
+i4219s|     1 |     0 | 49172 |     - |  oneopt|   0 | 374k| 656k| 656k|   0 |  0 |   0 |   0 | 2.972049e+05 | 1.627584e+05 |  82.60%| unknown
+  262m|     1 |     0 |519826 |     - |  4970M |   0 | 374k| 656k| 656k|   0 |  0 |   0 |   0 | 1.792336e+05 | 1.627584e+05 |  10.12%| unknown
+  999m|     1 |     0 |519826 |     - |  5008M |   0 | 374k| 656k| 656k|   2 |  1 |   0 |   0 | 1.792336e+05 | 1.627584e+05 |  10.12%| unknown
+(node 1) LP solver hit time limit in LP 2 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 59969.77
+Solving Nodes      : 1
+Primal Bound       : +1.62758422991333e+05 (7 solutions)
+Dual Bound         : +1.79233633408325e+05
+Gap                : 10.12 %
+0.5
+[60091.929579496384]
+[162758.42299133266]
+nohup: ignoring input
+nohup: ignoring input
+No problem file!
+Traceback (most recent call last):
+  File "/home/yehuigen/GNN_GBDT/08-SC2-SCIP.py", line 481, in <module>
+    optimize(**vars(args))
+  File "/home/yehuigen/GNN_GBDT/08-SC2-SCIP.py", line 238, in optimize
+    with open('./example-SC-h/node1.pickle', "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './example-SC-h/node1.pickle'
+nohup: ignoring input
+feasible solution found by trivial heuristic after 19.1 seconds, objective value 4.670459e+05
+presolving:
+(round 1, fast)       1516880 del vars, 1242463 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 213101 clqs
+(round 2, fast)       1598735 del vars, 1745078 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 157735 clqs
+(round 3, fast)       1738683 del vars, 1816677 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 100843 clqs
+(round 4, fast)       1780797 del vars, 1851852 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 76892 clqs
+(round 5, fast)       1801037 del vars, 1865029 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 67038 clqs
+(round 6, fast)       1809242 del vars, 1871702 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 62401 clqs
+(round 7, fast)       1813412 del vars, 1874563 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 60300 clqs
+(round 8, fast)       1815206 del vars, 1875961 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 59320 clqs
+(round 9, fast)       1816132 del vars, 1876672 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 58807 clqs
+(round 10, fast)       1816596 del vars, 1877046 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 58528 clqs
+(round 11, fast)       1816830 del vars, 1877239 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 58392 clqs
+(round 12, fast)       1816962 del vars, 1877344 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 58318 clqs
+   (40.7s) running MILP presolver
+   (41.2s) MILP presolver (2 rounds): 0 aggregations, 41 fixings, 0 bound changes
+(round 13, exhaustive) 1817085 del vars, 1877427 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 122510 upgd conss, 0 impls, 58261 clqs
+(round 14, fast)       1868211 del vars, 1881520 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 0 chg coeffs, 122510 upgd conss, 0 impls, 58256 clqs
+(round 15, fast)       1880969 del vars, 1881520 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 38654 chg coeffs, 122510 upgd conss, 0 impls, 79669 clqs
+(round 16, fast)       1889314 del vars, 1896204 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 42679 chg coeffs, 122510 upgd conss, 0 impls, 79264 clqs
+(round 17, fast)       1894255 del vars, 1899713 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 43782 chg coeffs, 122510 upgd conss, 0 impls, 77145 clqs
+(round 18, fast)       1896011 del vars, 1901413 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 44390 chg coeffs, 122510 upgd conss, 0 impls, 76652 clqs
+(round 19, fast)       1896689 del vars, 1902033 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 44640 chg coeffs, 122510 upgd conss, 0 impls, 76469 clqs
+(round 20, fast)       1896940 del vars, 1902256 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 44735 chg coeffs, 122510 upgd conss, 0 impls, 76422 clqs
+   (45.5s) running MILP presolver
+   (45.8s) MILP presolver (2 rounds): 0 aggregations, 29 fixings, 0 bound changes
+(round 21, medium)     1900649 del vars, 1905076 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 44781 chg coeffs, 122510 upgd conss, 0 impls, 73363 clqs
+(round 22, fast)       1901404 del vars, 1905962 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 45288 chg coeffs, 122510 upgd conss, 0 impls, 73256 clqs
+(round 23, fast)       1901784 del vars, 1906289 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 45377 chg coeffs, 122510 upgd conss, 0 impls, 73080 clqs
+(round 24, fast)       1901925 del vars, 1906427 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 45440 chg coeffs, 122510 upgd conss, 0 impls, 73061 clqs
+(round 25, medium)     1902711 del vars, 1907035 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 45473 chg coeffs, 122510 upgd conss, 0 impls, 72428 clqs
+(round 26, fast)       1902887 del vars, 1907237 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 45568 chg coeffs, 122510 upgd conss, 0 impls, 72387 clqs
+(round 27, fast)       1902986 del vars, 1907313 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 45587 chg coeffs, 122510 upgd conss, 0 impls, 72342 clqs
+(round 28, medium)     1903218 del vars, 1907491 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 45612 chg coeffs, 122510 upgd conss, 0 impls, 72190 clqs
+(round 29, medium)     1903323 del vars, 1907589 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 45647 chg coeffs, 122510 upgd conss, 0 impls, 72143 clqs
+(round 30, exhaustive) 1903810 del vars, 1907609 del conss, 0 add conss, 446698 chg bounds, 0 chg sides, 45663 chg coeffs, 122514 upgd conss, 0 impls, 72140 clqs
+   (52.2s) probing: 51/102789 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (52.2s) probing aborted: 50/50 successive totally useless probings
+   (52.6s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (53.0s) no symmetry present
+presolving (31 rounds: 31 fast, 7 medium, 3 exhaustive):
+ 1907234 deleted vars, 1910097 deleted constraints, 0 added constraints, 446698 tightened bounds, 0 added holes, 0 changed sides, 46124 changed coefficients
+ 0 implications, 70235 cliques
+presolved problem has 99373 variables (99373 bin, 0 int, 0 impl, 0 cont) and 89839 constraints
+  45100 constraints of type <setppc>
+  44739 constraints of type <logicor>
+Presolving Time: 42.18
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t55.0s|     1 |     0 |     0 |     - | trivial|   0 |  99k|  89k|   0 |   0 |  0 |   0 |   0 | 2.583202e+05 | 3.023109e+05 |  17.03%| unknown
+p 145s|     1 |     0 |  2458 |     - |  clique|   0 |  99k|  89k|  89k|   0 |  0 |   0 |   0 | 2.583202e+05 | 2.763708e+05 |   6.99%| unknown
+* 201s|     1 |     0 | 69189 |     - |    LP  |   0 |  99k|  89k|  89k|   0 |  0 |   0 |   0 | 2.737781e+05 | 2.737781e+05 |   0.00%| unknown
+  201s|     1 |     0 | 69189 |     - |  6168M |   0 |  99k|  89k|  89k|   0 |  0 |   0 |   0 | 2.737781e+05 | 2.737781e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 200.94
+Solving Nodes      : 1
+Primal Bound       : +2.73778097255589e+05 (5 solutions)
+Dual Bound         : +2.73778097255589e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 20.5 seconds, objective value 4.964571e+05
+presolving:
+(round 1, fast)       1363373 del vars, 1036599 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 336639 clqs
+(round 2, fast)       1434664 del vars, 1499773 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 284644 clqs
+(round 3, fast)       1533498 del vars, 1572048 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 233180 clqs
+(round 4, fast)       1566146 del vars, 1610209 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 209759 clqs
+(round 5, fast)       1581493 del vars, 1624076 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 200260 clqs
+(round 6, fast)       1587757 del vars, 1630997 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 195940 clqs
+(round 7, fast)       1590852 del vars, 1633972 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 193927 clqs
+(round 8, fast)       1592212 del vars, 1635398 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 193003 clqs
+(round 9, fast)       1592827 del vars, 1636009 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 192591 clqs
+(round 10, fast)       1593108 del vars, 1636298 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 192408 clqs
+   (57.4s) running MILP presolver
+   (59.3s) MILP presolver (2 rounds): 0 aggregations, 61 fixings, 0 bound changes
+(round 11, exhaustive) 1593297 del vars, 1636477 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 360740 upgd conss, 0 impls, 192298 clqs
+(round 12, fast)       1653826 del vars, 1637611 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 0 chg coeffs, 360740 upgd conss, 0 impls, 192294 clqs
+(round 13, fast)       1664192 del vars, 1637611 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 57096 chg coeffs, 360740 upgd conss, 0 impls, 228905 clqs
+(round 14, fast)       1670286 del vars, 1650865 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 60946 chg coeffs, 360740 upgd conss, 0 impls, 229776 clqs
+(round 15, fast)       1673836 del vars, 1653820 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 62034 chg coeffs, 360740 upgd conss, 0 impls, 228283 clqs
+(round 16, fast)       1674949 del vars, 1655237 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 62777 chg coeffs, 360740 upgd conss, 0 impls, 228184 clqs
+(round 17, fast)       1675336 del vars, 1655687 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 63037 chg coeffs, 360740 upgd conss, 0 impls, 228147 clqs
+   (78.7s) running MILP presolver
+   (80.2s) MILP presolver (2 rounds): 0 aggregations, 43 fixings, 0 bound changes
+(round 18, medium)     1677831 del vars, 1657826 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 63170 chg coeffs, 360740 upgd conss, 0 impls, 226140 clqs
+(round 19, fast)       1678128 del vars, 1658255 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 63494 chg coeffs, 360740 upgd conss, 0 impls, 226145 clqs
+(round 20, medium)     1678599 del vars, 1658706 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 63582 chg coeffs, 360740 upgd conss, 0 impls, 225836 clqs
+(round 21, exhaustive) 1679916 del vars, 1658836 del conss, 0 add conss, 345788 chg bounds, 0 chg sides, 63659 chg coeffs, 360754 upgd conss, 0 impls, 225806 clqs
+   (104.5s) probing: 51/324753 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (104.5s) probing aborted: 50/50 successive totally useless probings
+   (106.2s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (108.4s) no symmetry present
+presolving (22 rounds: 22 fast, 5 medium, 3 exhaustive):
+ 1680105 deleted vars, 1658957 deleted constraints, 0 added constraints, 345788 tightened bounds, 0 added holes, 0 changed sides, 64876 changed coefficients
+ 0 implications, 226675 cliques
+presolved problem has 324609 variables (324609 bin, 0 int, 0 impl, 0 cont) and 338261 constraints
+ 182277 constraints of type <setppc>
+ 155984 constraints of type <logicor>
+Presolving Time: 98.40
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 112s|     1 |     0 |     0 |     - | trivial|   0 | 324k| 338k|   0 |   0 |  0 |   0 |   0 | 2.006409e+05 | 3.540761e+05 |  76.47%| unknown
+p2258s|     1 |     0 |     0 |     - |   locks|   0 | 324k| 338k| 338k|   0 |  0 |   0 |   0 | 2.006409e+05 | 2.702982e+05 |  34.72%| unknown
+i2365s|     1 |     0 |  8670 |     - |  oneopt|   0 | 324k| 338k| 338k|   0 |  0 |   0 |   0 | 2.006409e+05 | 2.696759e+05 |  34.41%| unknown
+ 4118s|     1 |     0 |260305 |     - |  7113M |   0 | 324k| 338k| 338k|   0 |  0 |   0 |   0 | 2.525212e+05 | 2.696759e+05 |   6.79%| unknown
+r4118s|     1 |     0 |260305 |     - |simplero|   0 | 324k| 338k| 338k|   0 |  0 |   0 |   0 | 2.525212e+05 | 2.525252e+05 |   0.00%| unknown
+r4121s|     1 |     0 |260305 |     - |rounding|   0 | 324k| 338k| 338k|   0 |  0 |   0 |   0 | 2.525212e+05 | 2.525251e+05 |   0.00%| unknown
+r4122s|     1 |     0 |260305 |     - |shifting|   0 | 324k| 338k| 338k|   0 |  0 |   0 |   0 | 2.525212e+05 | 2.525244e+05 |   0.00%| unknown
+i4123s|     1 |     0 |260305 |     - |  oneopt|   0 | 324k| 338k| 338k|   0 |  0 |   0 |   0 | 2.525212e+05 | 2.525213e+05 |   0.00%| unknown
+ 4362s|     1 |     0 |260306 |     - |  7382M |   0 | 324k| 338k| 338k|   2 |  1 |   0 |   0 | 2.525212e+05 | 2.525213e+05 |   0.00%| unknown
+ 4363s|     1 |     0 |260306 |     - |  7379M |   0 | 324k| 338k| 337k|   2 |  1 |   0 |   0 | 2.525212e+05 | 2.525213e+05 |   0.00%| unknown
+ 4365s|     1 |     0 |260306 |     - |  7379M |   0 | 324k| 289k| 286k|   2 |  2 |   0 |   0 | 2.525212e+05 | 2.525213e+05 |   0.00%| unknown
+ 4367s|     1 |     0 |260306 |     - |  7379M |   0 | 324k| 150k| 286k|   2 |  4 |   0 |   0 | 2.525212e+05 | 2.525213e+05 |   0.00%| unknown
+d4367s|     1 |     0 |260306 |     - |farkasdi|   0 | 324k| 150k| 286k|   0 |  6 |   0 |   0 | 2.525212e+05 | 2.525212e+05 |   0.00%| unknown
+ 4368s|     1 |     0 |260306 |     - |  7381M |   0 | 324k| 150k| 286k|   2 |  6 |   0 |   0 | 2.525212e+05 | 2.525212e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 4367.61
+Solving Nodes      : 1
+Primal Bound       : +2.52521242230749e+05 (10 solutions)
+Dual Bound         : +2.52521242230749e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.2 seconds, objective value 2.769505e+05
+presolving:
+(round 1, fast)       1986410 del vars, 52516 del conss, 0 add conss, 1752 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 19 clqs
+(round 2, fast)       1999944 del vars, 52574 del conss, 0 add conss, 1752 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+(round 3, fast)       1999999 del vars, 52575 del conss, 0 add conss, 1752 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (4 rounds: 4 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 52575 deleted constraints, 0 added constraints, 1752 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 8.08
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 11.86
+Solving Nodes      : 0
+Primal Bound       : +2.73776742820386e+05 (4 solutions)
+Dual Bound         : +2.73776742820386e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.8 seconds, objective value 2.817341e+05
+presolving:
+(round 1, fast)       1995547 del vars, 11206 del conss, 0 add conss, 379 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+(round 2, fast)       1999997 del vars, 11209 del conss, 0 add conss, 379 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 11209 deleted constraints, 0 added constraints, 379 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.94
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 10.65
+Solving Nodes      : 0
+Primal Bound       : +2.73777586968273e+05 (3 solutions)
+Dual Bound         : +2.73777586968273e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.4 seconds, objective value 2.780565e+05
+presolving:
+(round 1, fast)       1988714 del vars, 32600 del conss, 0 add conss, 1096 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 15 clqs
+(round 2, fast)       1999949 del vars, 32640 del conss, 0 add conss, 1096 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999988 del vars, 32640 del conss, 0 add conss, 1096 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (9.4s) running MILP presolver
+   (9.4s) MILP presolver found nothing
+(round 4, exhaustive) 1999988 del vars, 32640 del conss, 0 add conss, 1096 chg bounds, 0 chg sides, 0 chg coeffs, 4 upgd conss, 0 impls, 0 clqs
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 32644 deleted constraints, 0 added constraints, 1096 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.84
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 10.63
+Solving Nodes      : 0
+Primal Bound       : +2.73774875430838e+05 (3 solutions)
+Dual Bound         : +2.73774875430838e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.2 seconds, objective value 2.525371e+05
+presolving:
+(round 1, fast)       1999969 del vars, 150 del conss, 0 add conss, 1 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       1999969 del vars, 151 del conss, 0 add conss, 1 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999972 del vars, 151 del conss, 0 add conss, 1 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (7.2s) running MILP presolver
+   (7.2s) MILP presolver found nothing
+(round 4, exhaustive) 1999972 del vars, 151 del conss, 0 add conss, 1 chg bounds, 0 chg sides, 0 chg coeffs, 7 upgd conss, 0 impls, 0 clqs
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 158 deleted constraints, 0 added constraints, 1 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.15
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 8.28
+Solving Nodes      : 0
+Primal Bound       : +2.52521598053531e+05 (3 solutions)
+Dual Bound         : +2.52521598053531e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.1 seconds, objective value 2.737744e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.84
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.89
+Solving Nodes      : 0
+Primal Bound       : +2.73774365143516e+05 (3 solutions)
+Dual Bound         : +2.73774365143516e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.8 seconds, objective value 2.525232e+05
+presolving:
+(round 1, fast)       1999988 del vars, 32 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (7.8s) running MILP presolver
+   (7.8s) MILP presolver found nothing
+(round 2, exhaustive) 1999988 del vars, 32 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 3 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 35 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.65
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.07
+Solving Nodes      : 0
+Primal Bound       : +2.52518553712469e+05 (3 solutions)
+Dual Bound         : +2.52518553712469e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.7 seconds, objective value 2.816364e+05
+presolving:
+(round 1, fast)       1943767 del vars, 186741 del conss, 0 add conss, 6689 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 395 clqs
+(round 2, fast)       1998000 del vars, 188044 del conss, 0 add conss, 6689 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4 clqs
+(round 3, fast)       1999417 del vars, 188059 del conss, 0 add conss, 6689 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 4, fast)       1999441 del vars, 188059 del conss, 0 add conss, 6689 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (10.6s) running MILP presolver
+   (10.6s) MILP presolver found nothing
+(round 5, exhaustive) 1999441 del vars, 188059 del conss, 0 add conss, 6689 chg bounds, 0 chg sides, 0 chg coeffs, 181 upgd conss, 0 impls, 0 clqs
+(round 6, fast)       1999991 del vars, 188234 del conss, 0 add conss, 6689 chg bounds, 0 chg sides, 0 chg coeffs, 181 upgd conss, 0 impls, 0 clqs
+(round 7, fast)       1999998 del vars, 188234 del conss, 0 add conss, 6689 chg bounds, 0 chg sides, 6 chg coeffs, 181 upgd conss, 0 impls, 0 clqs
+(round 8, fast)       2000001 del vars, 188240 del conss, 0 add conss, 6689 chg bounds, 0 chg sides, 9 chg coeffs, 181 upgd conss, 0 impls, 0 clqs
+presolving (9 rounds: 9 fast, 2 medium, 2 exhaustive):
+ 2000003 deleted vars, 188240 deleted constraints, 0 added constraints, 6689 tightened bounds, 0 added holes, 0 changed sides, 9 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 8.00
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 12.02
+Solving Nodes      : 0
+Primal Bound       : +2.52440918708955e+05 (3 solutions)
+Dual Bound         : +2.52440918708955e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 24.3 seconds, objective value 5.096638e+05
+presolving:
+(round 1, fast)       1368300 del vars, 1064959 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 310851 clqs
+(round 2, fast)       1442729 del vars, 1530771 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 258796 clqs
+(round 3, fast)       1550295 del vars, 1604695 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 206459 clqs
+(round 4, fast)       1585560 del vars, 1643765 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 182655 clqs
+(round 5, fast)       1602415 del vars, 1658067 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 172909 clqs
+(round 6, fast)       1609337 del vars, 1665416 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 168282 clqs
+(round 7, fast)       1612765 del vars, 1668468 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 166242 clqs
+(round 8, fast)       1614314 del vars, 1670012 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 165227 clqs
+(round 9, fast)       1614989 del vars, 1670654 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 164794 clqs
+(round 10, fast)       1615334 del vars, 1670985 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 164572 clqs
+   (59.4s) running MILP presolver
+   (60.9s) MILP presolver (2 rounds): 0 aggregations, 98 fixings, 0 bound changes
+(round 11, exhaustive) 1615605 del vars, 1671230 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 322228 upgd conss, 0 impls, 164423 clqs
+(round 12, fast)       1681796 del vars, 1672789 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 0 chg coeffs, 322228 upgd conss, 0 impls, 164414 clqs
+(round 13, fast)       1694765 del vars, 1672792 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 61468 chg coeffs, 322228 upgd conss, 0 impls, 201882 clqs
+(round 14, fast)       1702478 del vars, 1688850 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 66298 chg coeffs, 322228 upgd conss, 0 impls, 202977 clqs
+(round 15, fast)       1707393 del vars, 1692788 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 67749 chg coeffs, 322228 upgd conss, 0 impls, 200844 clqs
+(round 16, fast)       1709028 del vars, 1694816 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 68740 chg coeffs, 322228 upgd conss, 0 impls, 200650 clqs
+(round 17, fast)       1709745 del vars, 1695579 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 69137 chg coeffs, 322228 upgd conss, 0 impls, 200506 clqs
+(round 18, fast)       1709982 del vars, 1695861 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 69303 chg coeffs, 322228 upgd conss, 0 impls, 200497 clqs
+   (77.3s) running MILP presolver
+   (78.5s) MILP presolver (2 rounds): 0 aggregations, 48 fixings, 0 bound changes
+(round 19, medium)     1712927 del vars, 1698363 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 69396 chg coeffs, 322228 upgd conss, 0 impls, 198004 clqs
+(round 20, fast)       1713332 del vars, 1698920 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 69800 chg coeffs, 322228 upgd conss, 0 impls, 198040 clqs
+(round 21, medium)     1713966 del vars, 1699514 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 69904 chg coeffs, 322228 upgd conss, 0 impls, 197608 clqs
+(round 22, exhaustive) 1715391 del vars, 1699702 del conss, 0 add conss, 351180 chg bounds, 0 chg sides, 70018 chg coeffs, 322242 upgd conss, 0 impls, 197554 clqs
+   (96.2s) probing: 51/290457 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (96.2s) probing aborted: 50/50 successive totally useless probings
+   (97.3s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (99.0s) no symmetry present
+presolving (23 rounds: 23 fast, 5 medium, 3 exhaustive):
+ 1715698 deleted vars, 1699898 deleted constraints, 0 added constraints, 351180 tightened bounds, 0 added holes, 0 changed sides, 71272 changed coefficients
+ 0 implications, 198350 cliques
+presolved problem has 290197 variables (290197 bin, 0 int, 0 impl, 0 cont) and 293567 constraints
+ 151807 constraints of type <setppc>
+ 141760 constraints of type <logicor>
+Presolving Time: 85.53
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 102s|     1 |     0 |     0 |     - | trivial|   0 | 290k| 293k|   0 |   0 |  0 |   0 |   0 | 2.053699e+05 | 3.464473e+05 |  68.69%| unknown
+p1526s|     1 |     0 |     0 |     - |   locks|   0 | 290k| 293k| 293k|   0 |  0 |   0 |   0 | 2.053699e+05 | 3.464473e+05 |  68.69%| unknown
+p1578s|     1 |     0 | 18422 |     - | vbounds|   0 | 290k| 293k| 293k|   0 |  0 |   0 |   0 | 2.053699e+05 | 2.712056e+05 |  32.06%| unknown
+*2680s|     1 |     0 |232357 |     - |    LP  |   0 | 290k| 293k| 293k|   0 |  0 |   0 |   0 | 2.516094e+05 | 2.516094e+05 |   0.00%| unknown
+ 2680s|     1 |     0 |232357 |     - |  7015M |   0 | 290k| 293k| 293k|   0 |  0 |   0 |   0 | 2.516094e+05 | 2.516094e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2679.85
+Solving Nodes      : 1
+Primal Bound       : +2.51609437394930e+05 (6 solutions)
+Dual Bound         : +2.51609437394930e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.3 seconds, objective value 2.603404e+05
+presolving:
+(round 1, fast)       1995787 del vars, 8158 del conss, 0 add conss, 283 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+(round 2, fast)       1999991 del vars, 8161 del conss, 0 add conss, 283 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999994 del vars, 8161 del conss, 0 add conss, 283 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (8.9s) running MILP presolver
+   (8.9s) MILP presolver found nothing
+(round 4, exhaustive) 1999994 del vars, 8161 del conss, 0 add conss, 283 chg bounds, 0 chg sides, 0 chg coeffs, 2 upgd conss, 0 impls, 0 clqs
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 8163 deleted constraints, 0 added constraints, 283 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.46
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 10.06
+Solving Nodes      : 0
+Primal Bound       : +2.52508390708828e+05 (3 solutions)
+Dual Bound         : +2.52508390708828e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.0 seconds, objective value 2.525186e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 1999997 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.94
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 8.33
+Solving Nodes      : 0
+Primal Bound       : +2.52518553712469e+05 (3 solutions)
+Dual Bound         : +2.52518553712469e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.9 seconds, objective value 2.515449e+05
+presolving:
+(round 1, fast)       1999976 del vars, 82 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (6.8s) running MILP presolver
+   (6.8s) MILP presolver found nothing
+(round 2, exhaustive) 1999976 del vars, 82 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 6 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 88 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.13
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.86
+Solving Nodes      : 0
+Primal Bound       : +2.51533130779476e+05 (3 solutions)
+Dual Bound         : +2.51533130779476e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.2 seconds, objective value 2.525084e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.15
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 8.84
+Solving Nodes      : 0
+Primal Bound       : +2.52508390708828e+05 (3 solutions)
+Dual Bound         : +2.52508390708828e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.8 seconds, objective value 2.515300e+05
+presolving:
+(round 1, fast)       1999984 del vars, 55 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (6.7s) running MILP presolver
+   (6.7s) MILP presolver found nothing
+(round 2, exhaustive) 1999984 del vars, 55 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 4 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 59 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.71
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.79
+Solving Nodes      : 0
+Primal Bound       : +2.51523091000567e+05 (3 solutions)
+Dual Bound         : +2.51523091000567e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 16.9 seconds, objective value 5.031833e+05
+presolving:
+(round 1, fast)       1377760 del vars, 1072792 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 308737 clqs
+(round 2, fast)       1452168 del vars, 1546704 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 256178 clqs
+(round 3, fast)       1561678 del vars, 1621219 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 202737 clqs
+(round 4, fast)       1597607 del vars, 1661008 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 178134 clqs
+(round 5, fast)       1615080 del vars, 1675748 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 168034 clqs
+(round 6, fast)       1622358 del vars, 1683329 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 163237 clqs
+(round 7, fast)       1626014 del vars, 1686505 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 161116 clqs
+(round 8, fast)       1627572 del vars, 1688068 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 160109 clqs
+(round 9, fast)       1628340 del vars, 1688790 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 159626 clqs
+(round 10, fast)       1628699 del vars, 1689126 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 159401 clqs
+   (44.5s) running MILP presolver
+   (45.6s) MILP presolver (2 rounds): 0 aggregations, 125 fixings, 0 bound changes
+(round 11, exhaustive) 1629005 del vars, 1689419 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 159217 clqs
+(round 12, exhaustive) 1629024 del vars, 1689439 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 309248 upgd conss, 0 impls, 159200 clqs
+(round 13, fast)       1693709 del vars, 1691080 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 0 chg coeffs, 309248 upgd conss, 0 impls, 159194 clqs
+(round 14, fast)       1706732 del vars, 1691080 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 59709 chg coeffs, 309248 upgd conss, 0 impls, 195580 clqs
+(round 15, fast)       1714544 del vars, 1707137 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 64533 chg coeffs, 309248 upgd conss, 0 impls, 196483 clqs
+(round 16, fast)       1719526 del vars, 1711194 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 65926 chg coeffs, 309248 upgd conss, 0 impls, 194314 clqs
+(round 17, fast)       1721231 del vars, 1713158 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 66946 chg coeffs, 309248 upgd conss, 0 impls, 194084 clqs
+(round 18, fast)       1721863 del vars, 1713921 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 67318 chg coeffs, 309248 upgd conss, 0 impls, 194000 clqs
+(round 19, fast)       1722124 del vars, 1714184 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 67454 chg coeffs, 309248 upgd conss, 0 impls, 193937 clqs
+   (59.8s) running MILP presolver
+   (60.8s) MILP presolver (2 rounds): 0 aggregations, 42 fixings, 0 bound changes
+(round 20, medium)     1725059 del vars, 1716684 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 67534 chg coeffs, 309248 upgd conss, 0 impls, 191465 clqs
+(round 21, fast)       1725436 del vars, 1717211 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 67956 chg coeffs, 309248 upgd conss, 0 impls, 191525 clqs
+(round 22, fast)       1725678 del vars, 1717450 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 68010 chg coeffs, 309248 upgd conss, 0 impls, 191392 clqs
+(round 23, medium)     1726177 del vars, 1717903 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 68090 chg coeffs, 309248 upgd conss, 0 impls, 191051 clqs
+(round 24, exhaustive) 1727488 del vars, 1718079 del conss, 0 add conss, 360642 chg bounds, 0 chg sides, 68178 chg coeffs, 309248 upgd conss, 0 impls, 190992 clqs
+   (78.8s) probing: 51/278443 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (78.8s) probing aborted: 50/50 successive totally useless probings
+   (79.9s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (81.4s) no symmetry present
+presolving (25 rounds: 25 fast, 6 medium, 4 exhaustive):
+ 1727820 deleted vars, 1718306 deleted constraints, 0 added constraints, 360642 tightened bounds, 0 added holes, 0 changed sides, 69354 changed coefficients
+ 0 implications, 191724 cliques
+presolved problem has 278152 variables (278152 bin, 0 int, 0 impl, 0 cont) and 280372 constraints
+ 146490 constraints of type <setppc>
+ 133882 constraints of type <logicor>
+Presolving Time: 73.04
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t84.5s|     1 |     0 |     0 |     - | trivial|   0 | 278k| 280k|   0 |   0 |  0 |   0 |   0 | 2.073137e+05 | 3.412525e+05 |  64.61%| unknown
+p1435s|     1 |     0 |     0 |     - |   locks|   0 | 278k| 280k| 280k|   0 |  0 |   0 |   0 | 2.073137e+05 | 2.680875e+05 |  29.31%| unknown
+i1516s|     1 |     0 | 10711 |     - |  oneopt|   0 | 278k| 280k| 280k|   0 |  0 |   0 |   0 | 2.073137e+05 | 2.675297e+05 |  29.05%| unknown
+*2382s|     1 |     0 |214975 |     - |    LP  |   0 | 278k| 280k| 280k|   0 |  0 |   0 |   0 | 2.513909e+05 | 2.513909e+05 |   0.00%| unknown
+ 2382s|     1 |     0 |214975 |     - |  6808M |   0 | 278k| 280k| 280k|   0 |  0 |   0 |   0 | 2.513909e+05 | 2.513909e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2382.49
+Solving Nodes      : 1
+Primal Bound       : +2.51390909064357e+05 (6 solutions)
+Dual Bound         : +2.51390909064357e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 4.5 seconds, objective value 2.521079e+05
+presolving:
+(round 1, fast)       1999212 del vars, 4076 del conss, 0 add conss, 263 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       1999999 del vars, 4077 del conss, 0 add conss, 263 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 4077 deleted constraints, 0 added constraints, 263 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 3.88
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 6.05
+Solving Nodes      : 0
+Primal Bound       : +2.51522288715755e+05 (3 solutions)
+Dual Bound         : +2.51522288715755e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.5 seconds, objective value 2.626301e+05
+presolving:
+(round 1, fast)       1993065 del vars, 25699 del conss, 0 add conss, 627 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4 clqs
+(round 2, fast)       1999980 del vars, 25718 del conss, 0 add conss, 627 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 25718 deleted constraints, 0 added constraints, 627 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.06
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.86
+Solving Nodes      : 0
+Primal Bound       : +2.51522137661356e+05 (3 solutions)
+Dual Bound         : +2.51522137661356e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.6 seconds, objective value 2.561650e+05
+presolving:
+(round 1, fast)       1994001 del vars, 23083 del conss, 0 add conss, 492 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       1999996 del vars, 23087 del conss, 0 add conss, 492 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 23087 deleted constraints, 0 added constraints, 492 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.03
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.85
+Solving Nodes      : 0
+Primal Bound       : +2.51523091000568e+05 (3 solutions)
+Dual Bound         : +2.51523091000568e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.6 seconds, objective value 2.513901e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.00
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 6.88
+Solving Nodes      : 0
+Primal Bound       : +2.51390106779549e+05 (3 solutions)
+Dual Bound         : +2.51390106779549e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.7 seconds, objective value 2.515221e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.25
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.04
+Solving Nodes      : 0
+Primal Bound       : +2.51522137661355e+05 (3 solutions)
+Dual Bound         : +2.51522137661355e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.0 seconds, objective value 2.513892e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 3.58
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 6.23
+Solving Nodes      : 0
+Primal Bound       : +2.51389153440337e+05 (3 solutions)
+Dual Bound         : +2.51389153440337e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 19.5 seconds, objective value 5.683487e+05
+presolving:
+(round 1, fast)       1232795 del vars, 1049707 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 320852 clqs
+(round 2, fast)       1325737 del vars, 1369559 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 270360 clqs
+(round 3, fast)       1413332 del vars, 1436015 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 230877 clqs
+(round 4, fast)       1441034 del vars, 1465793 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 214812 clqs
+(round 5, fast)       1453120 del vars, 1476431 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 208749 clqs
+(round 6, fast)       1457908 del vars, 1481378 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 205990 clqs
+(round 7, fast)       1460005 del vars, 1483366 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 204856 clqs
+(round 8, fast)       1460886 del vars, 1484256 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 204337 clqs
+   (47.0s) running MILP presolver
+   (49.1s) MILP presolver (2 rounds): 0 aggregations, 201 fixings, 0 bound changes
+(round 9, medium)     1461466 del vars, 1484596 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 204063 clqs
+(round 10, exhaustive) 1461513 del vars, 1484830 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 462196 upgd conss, 0 impls, 204016 clqs
+(round 11, fast)       1548930 del vars, 1485857 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 0 chg coeffs, 462196 upgd conss, 0 impls, 204011 clqs
+(round 12, fast)       1563462 del vars, 1485858 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 84300 chg coeffs, 462196 upgd conss, 0 impls, 254405 clqs
+(round 13, fast)       1571874 del vars, 1504351 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 90236 chg coeffs, 462196 upgd conss, 0 impls, 256532 clqs
+(round 14, fast)       1577107 del vars, 1508452 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 92185 chg coeffs, 462196 upgd conss, 0 impls, 255000 clqs
+(round 15, fast)       1578825 del vars, 1510448 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 93594 chg coeffs, 462196 upgd conss, 0 impls, 255209 clqs
+(round 16, fast)       1579501 del vars, 1511188 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 94090 chg coeffs, 462196 upgd conss, 0 impls, 255224 clqs
+   (70.0s) running MILP presolver
+   (71.8s) MILP presolver (2 rounds): 0 aggregations, 83 fixings, 0 bound changes
+(round 17, medium)     1582094 del vars, 1513465 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 94337 chg coeffs, 462196 upgd conss, 0 impls, 253254 clqs
+(round 18, medium)     1582564 del vars, 1514034 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 94763 chg coeffs, 462196 upgd conss, 0 impls, 253197 clqs
+(round 19, exhaustive) 1584512 del vars, 1514178 del conss, 0 add conss, 211920 chg bounds, 0 chg sides, 94847 chg coeffs, 462197 upgd conss, 0 impls, 253169 clqs
+   (99.2s) probing: 51/421698 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (99.2s) probing aborted: 50/50 successive totally useless probings
+   (101.2s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (103.9s) no symmetry present
+presolving (20 rounds: 20 fast, 6 medium, 3 exhaustive):
+ 1584643 deleted vars, 1514245 deleted constraints, 0 added constraints, 211920 tightened bounds, 0 added holes, 0 changed sides, 96677 changed coefficients
+ 0 implications, 254479 cliques
+presolved problem has 421615 variables (421615 bin, 0 int, 0 impl, 0 cont) and 432777 constraints
+ 192770 constraints of type <setppc>
+ 240007 constraints of type <logicor>
+Presolving Time: 93.87
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 109s|     1 |     0 |     0 |     - | trivial|   0 | 421k| 432k|   0 |   0 |  0 |   0 |   0 | 1.717761e+05 | 3.871283e+05 | 125.37%| unknown
+p2319s|     1 |     0 | 35554 |     - | vbounds|   0 | 421k| 432k| 432k|   0 |  0 |   0 |   0 | 1.717761e+05 | 2.677820e+05 |  55.89%| unknown
+*4881s|     1 |     0 |354608 |     - |    LP  |   0 | 421k| 432k| 432k|   0 |  0 |   0 |   0 | 2.389786e+05 | 2.389786e+05 |   0.00%| unknown
+ 4881s|     1 |     0 |354608 |     - |  7414M |   0 | 421k| 432k| 432k|   0 |  0 |   0 |   0 | 2.389786e+05 | 2.389786e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 4881.18
+Solving Nodes      : 1
+Primal Bound       : +2.38978593904569e+05 (5 solutions)
+Dual Bound         : +2.38978593904569e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 14.3 seconds, objective value 3.272884e+05
+presolving:
+(round 1, fast)       1791174 del vars, 1010923 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 13758 clqs
+(round 2, fast)       1966057 del vars, 1047648 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1154 clqs
+(round 3, fast)       1994679 del vars, 1049190 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 66 clqs
+(round 4, fast)       1996200 del vars, 1049296 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 24 clqs
+(round 5, fast)       1996345 del vars, 1049310 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 17 clqs
+(round 6, fast)       1996362 del vars, 1049314 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 17 clqs
+(round 7, fast)       1996369 del vars, 1049314 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 17 clqs
+   (24.0s) running MILP presolver
+   (24.0s) MILP presolver found nothing
+(round 8, exhaustive) 1996369 del vars, 1049314 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 0 chg coeffs, 1240 upgd conss, 0 impls, 17 clqs
+(round 9, fast)       1999751 del vars, 1050382 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 0 chg coeffs, 1240 upgd conss, 0 impls, 17 clqs
+(round 10, fast)       1999856 del vars, 1050382 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 157 chg coeffs, 1240 upgd conss, 0 impls, 85 clqs
+(round 11, fast)       1999910 del vars, 1050472 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 184 chg coeffs, 1240 upgd conss, 0 impls, 78 clqs
+(round 12, fast)       1999928 del vars, 1050475 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 185 chg coeffs, 1240 upgd conss, 0 impls, 78 clqs
+(round 13, fast)       1999929 del vars, 1050475 del conss, 0 add conss, 93350 chg bounds, 0 chg sides, 185 chg coeffs, 1240 upgd conss, 0 impls, 78 clqs
+   (24.0s) running MILP presolver
+   (24.0s) MILP presolver found nothing
+   (24.0s) probing: 51/115 (44.3%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (24.0s) probing aborted: 50/50 successive totally useless probings
+   (24.0s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (24.0s) no symmetry present
+presolving (14 rounds: 14 fast, 2 medium, 2 exhaustive):
+ 2000039 deleted vars, 1050550 deleted constraints, 0 added constraints, 93350 tightened bounds, 0 added holes, 0 changed sides, 185 changed coefficients
+ 0 implications, 4 cliques
+presolved problem has 5 variables (5 bin, 0 int, 0 impl, 0 cont) and 4 constraints
+      2 constraints of type <setppc>
+      2 constraints of type <logicor>
+Presolving Time: 16.29
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t24.1s|     1 |     0 |     0 |     - | trivial|   0 |   5 |   4 |   0 |   0 |  0 |   0 |   0 | 2.505448e+05 | 2.505463e+05 |   0.00%| unknown
+p24.1s|     1 |     0 |     0 |     - |  clique|   0 |   5 |   4 |   4 |   0 |  0 |   0 |   0 | 2.505448e+05 | 2.505455e+05 |   0.00%| unknown
+ 24.1s|     1 |     0 |     0 |     - |  5067M |   0 |   5 |   0 |   4 |   0 |  0 |   0 |   0 | 2.505455e+05 | 2.505455e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 24.15
+Solving Nodes      : 1
+Primal Bound       : +2.50545507096339e+05 (4 solutions)
+Dual Bound         : +2.50545507096339e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.7 seconds, objective value 2.515511e+05
+presolving:
+(round 1, fast)       1999747 del vars, 672 del conss, 0 add conss, 47 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 672 deleted constraints, 0 added constraints, 47 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.54
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 10.48
+Solving Nodes      : 0
+Primal Bound       : +2.51389153440337e+05 (3 solutions)
+Dual Bound         : +2.51389153440337e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.4 seconds, objective value 2.551909e+05
+presolving:
+(round 1, fast)       1985432 del vars, 41708 del conss, 0 add conss, 1171 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 7 clqs
+(round 2, fast)       1999982 del vars, 41726 del conss, 0 add conss, 1171 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 41726 deleted constraints, 0 added constraints, 1171 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 8.17
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 12.32
+Solving Nodes      : 0
+Primal Bound       : +2.51385159037318e+05 (3 solutions)
+Dual Bound         : +2.51385159037318e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.9 seconds, objective value 2.397597e+05
+presolving:
+(round 1, fast)       1996925 del vars, 12033 del conss, 0 add conss, 61 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+(round 2, fast)       1996925 del vars, 12092 del conss, 0 add conss, 61 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+(round 3, fast)       1997100 del vars, 12092 del conss, 0 add conss, 61 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+   (9.5s) running MILP presolver
+   (9.6s) MILP presolver found nothing
+(round 4, exhaustive) 1997100 del vars, 12092 del conss, 0 add conss, 61 chg bounds, 0 chg sides, 0 chg coeffs, 726 upgd conss, 0 impls, 1 clqs
+(round 5, fast)       1999996 del vars, 12815 del conss, 0 add conss, 61 chg bounds, 0 chg sides, 0 chg coeffs, 726 upgd conss, 0 impls, 1 clqs
+(round 6, fast)       1999996 del vars, 12815 del conss, 0 add conss, 61 chg bounds, 0 chg sides, 4 chg coeffs, 726 upgd conss, 0 impls, 3 clqs
+   (9.6s) running MILP presolver
+   (9.6s) MILP presolver found nothing
+   (9.6s) probing cycle finished: starting next cycle
+   (9.6s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (9.6s) no symmetry present
+presolving (7 rounds: 7 fast, 2 medium, 2 exhaustive):
+ 1999996 deleted vars, 12815 deleted constraints, 0 added constraints, 61 tightened bounds, 0 added holes, 0 changed sides, 4 changed coefficients
+ 0 implications, 3 cliques
+presolved problem has 4 variables (4 bin, 0 int, 0 impl, 0 cont) and 3 constraints
+      1 constraints of type <setppc>
+      2 constraints of type <logicor>
+Presolving Time: 6.44
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 9.6s|     1 |     0 |     0 |     - | trivial|   0 |   4 |   3 |   0 |   0 |  0 |   0 |   0 | 2.383260e+05 | 2.383278e+05 |   0.00%| unknown
+p 9.7s|     1 |     0 |     0 |     - |  clique|   0 |   4 |   3 |   3 |   0 |  0 |   0 |   0 | 2.383260e+05 | 2.383268e+05 |   0.00%| unknown
+  9.7s|     1 |     0 |     0 |     - |  4429M |   0 |   4 |   0 |   3 |   0 |  0 |   0 |   0 | 2.383268e+05 | 2.383268e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.66
+Solving Nodes      : 1
+Primal Bound       : +2.38326846683799e+05 (4 solutions)
+Dual Bound         : +2.38326846683799e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.0 seconds, objective value 2.513852e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.33
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.49
+Solving Nodes      : 0
+Primal Bound       : +2.51385159037318e+05 (3 solutions)
+Dual Bound         : +2.51385159037318e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.1 seconds, objective value 2.385865e+05
+presolving:
+(round 1, fast)       1999392 del vars, 2275 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (7.1s) running MILP presolver
+   (7.1s) MILP presolver found nothing
+(round 2, exhaustive) 1999392 del vars, 2275 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 152 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 2427 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.95
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 8.16
+Solving Nodes      : 0
+Primal Bound       : +2.38322735009933e+05 (3 solutions)
+Dual Bound         : +2.38322735009933e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 21.3 seconds, objective value 4.949974e+05
+presolving:
+(round 1, fast)       1345348 del vars, 1025032 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 331047 clqs
+(round 2, fast)       1415396 del vars, 1482938 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 281121 clqs
+(round 3, fast)       1515925 del vars, 1556799 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 230107 clqs
+(round 4, fast)       1549617 del vars, 1596569 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 206272 clqs
+(round 5, fast)       1565905 del vars, 1611121 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 196640 clqs
+(round 6, fast)       1572672 del vars, 1618545 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 192049 clqs
+(round 7, fast)       1575939 del vars, 1621603 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 190038 clqs
+(round 8, fast)       1577351 del vars, 1623117 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 189084 clqs
+(round 9, fast)       1578064 del vars, 1623837 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 188591 clqs
+(round 10, fast)       1578382 del vars, 1624187 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 188367 clqs
+   (50.2s) running MILP presolver
+   (51.8s) MILP presolver (2 rounds): 0 aggregations, 108 fixings, 0 bound changes
+(round 11, exhaustive) 1578663 del vars, 1624478 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 367606 upgd conss, 0 impls, 188183 clqs
+(round 12, fast)       1645571 del vars, 1625680 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 0 chg coeffs, 367606 upgd conss, 0 impls, 188175 clqs
+(round 13, fast)       1657912 del vars, 1625685 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 63271 chg coeffs, 367606 upgd conss, 0 impls, 227297 clqs
+(round 14, fast)       1665325 del vars, 1641349 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 67992 chg coeffs, 367606 upgd conss, 0 impls, 228367 clqs
+(round 15, fast)       1670055 del vars, 1645359 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 69455 chg coeffs, 367606 upgd conss, 0 impls, 226407 clqs
+(round 16, fast)       1671697 del vars, 1647315 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 70461 chg coeffs, 367606 upgd conss, 0 impls, 226177 clqs
+(round 17, fast)       1672361 del vars, 1648142 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 70864 chg coeffs, 367606 upgd conss, 0 impls, 226060 clqs
+(round 18, fast)       1672644 del vars, 1648465 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 71030 chg coeffs, 367606 upgd conss, 0 impls, 226015 clqs
+   (66.9s) running MILP presolver
+   (68.1s) MILP presolver (2 rounds): 0 aggregations, 48 fixings, 0 bound changes
+(round 19, medium)     1675289 del vars, 1650714 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 71126 chg coeffs, 367606 upgd conss, 0 impls, 223791 clqs
+(round 20, fast)       1675603 del vars, 1651180 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 71517 chg coeffs, 367606 upgd conss, 0 impls, 223871 clqs
+(round 21, medium)     1676096 del vars, 1651676 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 71633 chg coeffs, 367606 upgd conss, 0 impls, 223568 clqs
+(round 22, exhaustive) 1677499 del vars, 1651818 del conss, 0 add conss, 328496 chg bounds, 0 chg sides, 71717 chg coeffs, 367618 upgd conss, 0 impls, 223525 clqs
+   (88.1s) probing: 51/328035 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (88.1s) probing aborted: 50/50 successive totally useless probings
+   (89.6s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (91.4s) no symmetry present
+presolving (23 rounds: 23 fast, 5 medium, 3 exhaustive):
+ 1677702 deleted vars, 1651951 deleted constraints, 0 added constraints, 328496 tightened bounds, 0 added holes, 0 changed sides, 72979 changed coefficients
+ 0 implications, 224389 cliques
+presolved problem has 327877 variables (327877 bin, 0 int, 0 impl, 0 cont) and 340135 constraints
+ 176119 constraints of type <setppc>
+ 164016 constraints of type <logicor>
+Presolving Time: 79.31
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t94.7s|     1 |     0 |     0 |     - | trivial|   0 | 327k| 340k|   0 |   0 |  0 |   0 |   0 | 1.854561e+05 | 3.410871e+05 |  83.92%| unknown
+p1580s|     1 |     0 |     0 |     - |   locks|   0 | 327k| 340k| 340k|   0 |  0 |   0 |   0 | 1.854561e+05 | 2.546763e+05 |  37.32%| unknown
+i1679s|     1 |     0 | 11475 |     - |  oneopt|   0 | 327k| 340k| 340k|   0 |  0 |   0 |   0 | 1.854561e+05 | 2.540378e+05 |  36.98%| unknown
+*2917s|     1 |     0 |251433 |     - |    LP  |   0 | 327k| 340k| 340k|   0 |  0 |   0 |   0 | 2.348881e+05 | 2.348881e+05 |   0.00%| unknown
+ 2917s|     1 |     0 |251433 |     - |  7156M |   0 | 327k| 340k| 340k|   0 |  0 |   0 |   0 | 2.348881e+05 | 2.348881e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2917.49
+Solving Nodes      : 1
+Primal Bound       : +2.34888143697948e+05 (6 solutions)
+Dual Bound         : +2.34888143697948e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.3 seconds, objective value 2.798526e+05
+presolving:
+(round 1, fast)       1918501 del vars, 241432 del conss, 0 add conss, 6997 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 716 clqs
+(round 2, fast)       1996345 del vars, 243500 del conss, 0 add conss, 6997 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 3 clqs
+(round 3, fast)       1998620 del vars, 243539 del conss, 0 add conss, 6997 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 4, fast)       1998698 del vars, 243540 del conss, 0 add conss, 6997 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 5, fast)       1998700 del vars, 243540 del conss, 0 add conss, 6997 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (12.4s) running MILP presolver
+   (12.4s) MILP presolver found nothing
+(round 6, exhaustive) 1998700 del vars, 243540 del conss, 0 add conss, 6997 chg bounds, 0 chg sides, 0 chg coeffs, 422 upgd conss, 0 impls, 0 clqs
+(round 7, fast)       1999943 del vars, 243924 del conss, 0 add conss, 6997 chg bounds, 0 chg sides, 0 chg coeffs, 422 upgd conss, 0 impls, 0 clqs
+(round 8, fast)       1999968 del vars, 243924 del conss, 0 add conss, 6997 chg bounds, 0 chg sides, 41 chg coeffs, 422 upgd conss, 0 impls, 18 clqs
+(round 9, fast)       1999978 del vars, 243944 del conss, 0 add conss, 6997 chg bounds, 0 chg sides, 52 chg coeffs, 422 upgd conss, 0 impls, 18 clqs
+(round 10, fast)       1999983 del vars, 243944 del conss, 0 add conss, 6997 chg bounds, 0 chg sides, 52 chg coeffs, 422 upgd conss, 0 impls, 18 clqs
+   (12.4s) running MILP presolver
+   (12.4s) MILP presolver found nothing
+   (12.4s) probing cycle finished: starting next cycle
+   (12.4s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (12.4s) no symmetry present
+presolving (11 rounds: 11 fast, 2 medium, 2 exhaustive):
+ 2000007 deleted vars, 243960 deleted constraints, 0 added constraints, 6997 tightened bounds, 0 added holes, 0 changed sides, 52 changed coefficients
+ 0 implications, 2 cliques
+presolved problem has 3 variables (3 bin, 0 int, 0 impl, 0 cont) and 2 constraints
+      2 constraints of type <logicor>
+Presolving Time: 8.71
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t12.5s|     1 |     0 |     0 |     - | trivial|   0 |   3 |   2 |   0 |   0 |  0 |   0 |   0 | 2.381837e+05 | 2.381851e+05 |   0.00%| unknown
+p12.5s|     1 |     0 |     0 |     - |  clique|   0 |   3 |   2 |   2 |   0 |  0 |   0 |   0 | 2.381837e+05 | 2.381845e+05 |   0.00%| unknown
+p12.5s|     1 |     0 |     0 |     - |   locks|   0 |   3 |   2 |   2 |   0 |  0 |   0 |   0 | 2.381837e+05 | 2.381843e+05 |   0.00%| unknown
+ 12.5s|     1 |     0 |     0 |     - |  4623M |   0 |   3 |   0 |   2 |   0 |  0 |   1 |   0 | 2.381843e+05 | 2.381843e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 12.48
+Solving Nodes      : 1
+Primal Bound       : +2.38184268926699e+05 (5 solutions)
+Dual Bound         : +2.38184268926699e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.4 seconds, objective value 2.461957e+05
+presolving:
+(round 1, fast)       1995684 del vars, 8157 del conss, 0 add conss, 184 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 3 clqs
+(round 2, fast)       1999990 del vars, 8161 del conss, 0 add conss, 184 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999994 del vars, 8161 del conss, 0 add conss, 184 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (8.9s) running MILP presolver
+   (8.9s) MILP presolver found nothing
+(round 4, exhaustive) 1999994 del vars, 8161 del conss, 0 add conss, 184 chg bounds, 0 chg sides, 0 chg coeffs, 2 upgd conss, 0 impls, 0 clqs
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 8163 deleted constraints, 0 added constraints, 184 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.75
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 10.36
+Solving Nodes      : 0
+Primal Bound       : +2.38322276921067e+05 (3 solutions)
+Dual Bound         : +2.38322276921067e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.4 seconds, objective value 2.383227e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 1999997 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.33
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.02
+Solving Nodes      : 0
+Primal Bound       : +2.38322735009934e+05 (3 solutions)
+Dual Bound         : +2.38322735009934e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.1 seconds, objective value 2.348226e+05
+presolving:
+(round 1, fast)       1999861 del vars, 492 del conss, 0 add conss, 1 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       1999861 del vars, 493 del conss, 0 add conss, 1 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999864 del vars, 493 del conss, 0 add conss, 1 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (8.1s) running MILP presolver
+   (8.1s) MILP presolver found nothing
+(round 4, exhaustive) 1999864 del vars, 493 del conss, 0 add conss, 1 chg bounds, 0 chg sides, 0 chg coeffs, 34 upgd conss, 0 impls, 0 clqs
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 527 deleted constraints, 0 added constraints, 1 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.04
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.42
+Solving Nodes      : 0
+Primal Bound       : +2.34757880275469e+05 (3 solutions)
+Dual Bound         : +2.34757880275469e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.0 seconds, objective value 2.383223e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.03
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 8.70
+Solving Nodes      : 0
+Primal Bound       : +2.38322276921067e+05 (3 solutions)
+Dual Bound         : +2.38322276921067e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.3 seconds, objective value 2.347745e+05
+presolving:
+(round 1, fast)       1999960 del vars, 141 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (9.4s) running MILP presolver
+   (9.4s) MILP presolver found nothing
+(round 2, exhaustive) 1999960 del vars, 141 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 10 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 151 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.89
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 10.88
+Solving Nodes      : 0
+Primal Bound       : +2.34757422186602e+05 (3 solutions)
+Dual Bound         : +2.34757422186602e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 22.2 seconds, objective value 4.978134e+05
+presolving:
+(round 1, fast)       1347000 del vars, 1030612 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 327162 clqs
+(round 2, fast)       1417925 del vars, 1490248 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 276831 clqs
+(round 3, fast)       1520590 del vars, 1565014 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 225192 clqs
+(round 4, fast)       1555083 del vars, 1605340 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 201029 clqs
+(round 5, fast)       1571837 del vars, 1620093 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 191195 clqs
+(round 6, fast)       1578747 del vars, 1627555 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 186583 clqs
+(round 7, fast)       1582177 del vars, 1630860 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 184405 clqs
+(round 8, fast)       1583790 del vars, 1632580 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 183326 clqs
+(round 9, fast)       1584594 del vars, 1633363 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 182795 clqs
+(round 10, fast)       1584940 del vars, 1633728 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 182580 clqs
+   (55.0s) running MILP presolver
+   (56.7s) MILP presolver (2 rounds): 0 aggregations, 119 fixings, 0 bound changes
+(round 11, exhaustive) 1585243 del vars, 1634021 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 182396 clqs
+(round 12, exhaustive) 1585255 del vars, 1634036 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 358005 upgd conss, 0 impls, 182382 clqs
+(round 13, fast)       1653049 del vars, 1635330 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 0 chg coeffs, 358005 upgd conss, 0 impls, 182382 clqs
+(round 14, fast)       1665789 del vars, 1635331 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 63857 chg coeffs, 358005 upgd conss, 0 impls, 221586 clqs
+(round 15, fast)       1673403 del vars, 1651509 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 68753 chg coeffs, 358005 upgd conss, 0 impls, 222661 clqs
+(round 16, fast)       1678328 del vars, 1655601 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 70182 chg coeffs, 358005 upgd conss, 0 impls, 220632 clqs
+(round 17, fast)       1680032 del vars, 1657581 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 71289 chg coeffs, 358005 upgd conss, 0 impls, 220496 clqs
+(round 18, fast)       1680730 del vars, 1658422 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 71720 chg coeffs, 358005 upgd conss, 0 impls, 220384 clqs
+(round 19, fast)       1681041 del vars, 1658771 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 71895 chg coeffs, 358005 upgd conss, 0 impls, 220342 clqs
+   (73.8s) running MILP presolver
+   (75.3s) MILP presolver (2 rounds): 0 aggregations, 36 fixings, 0 bound changes
+(round 20, medium)     1683707 del vars, 1661023 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 72004 chg coeffs, 358005 upgd conss, 0 impls, 218118 clqs
+(round 21, fast)       1684030 del vars, 1661507 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 72405 chg coeffs, 358005 upgd conss, 0 impls, 218173 clqs
+(round 22, medium)     1684545 del vars, 1662022 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 72502 chg coeffs, 358005 upgd conss, 0 impls, 217840 clqs
+(round 23, exhaustive) 1685980 del vars, 1662184 del conss, 0 add conss, 330212 chg bounds, 0 chg sides, 72585 chg coeffs, 358005 upgd conss, 0 impls, 217800 clqs
+   (97.7s) probing: 51/319733 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (97.7s) probing aborted: 50/50 successive totally useless probings
+   (99.1s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (100.9s) no symmetry present
+presolving (24 rounds: 24 fast, 6 medium, 4 exhaustive):
+ 1686229 deleted vars, 1662334 deleted constraints, 0 added constraints, 330212 tightened bounds, 0 added holes, 0 changed sides, 73885 changed coefficients
+ 0 implications, 218677 cliques
+presolved problem has 319524 variables (319524 bin, 0 int, 0 impl, 0 cont) and 329701 constraints
+ 170051 constraints of type <setppc>
+ 159650 constraints of type <logicor>
+Presolving Time: 89.01
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 104s|     1 |     0 |     0 |     - | trivial|   0 | 319k| 329k|   0 |   0 |  0 |   0 |   0 | 1.864265e+05 | 3.395342e+05 |  82.13%| unknown
+p1375s|     1 |     0 |     0 |     - |   locks|   0 | 319k| 329k| 329k|   0 |  0 |   0 |   0 | 1.864265e+05 | 2.544932e+05 |  36.51%| unknown
+i1464s|     1 |     0 | 11121 |     - |  oneopt|   0 | 319k| 329k| 329k|   0 |  0 |   0 |   0 | 1.864265e+05 | 2.538468e+05 |  36.16%| unknown
+*2629s|     1 |     0 |241326 |     - |    LP  |   0 | 319k| 329k| 329k|   0 |  0 |   0 |   0 | 2.346225e+05 | 2.346225e+05 |   0.00%| unknown
+ 2629s|     1 |     0 |241326 |     - |  7006M |   0 | 319k| 329k| 329k|   0 |  0 |   0 |   0 | 2.346225e+05 | 2.346225e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2629.34
+Solving Nodes      : 1
+Primal Bound       : +2.34622537630292e+05 (6 solutions)
+Dual Bound         : +2.34622537630292e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.0 seconds, objective value 2.770436e+05
+presolving:
+(round 1, fast)       1916861 del vars, 243476 del conss, 0 add conss, 7005 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 729 clqs
+(round 2, fast)       1996154 del vars, 245608 del conss, 0 add conss, 7005 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 6 clqs
+(round 3, fast)       1998507 del vars, 245653 del conss, 0 add conss, 7005 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+(round 4, fast)       1998593 del vars, 245653 del conss, 0 add conss, 7005 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+   (11.8s) running MILP presolver
+   (11.8s) MILP presolver found nothing
+(round 5, exhaustive) 1998593 del vars, 245653 del conss, 0 add conss, 7005 chg bounds, 0 chg sides, 0 chg coeffs, 456 upgd conss, 0 impls, 1 clqs
+(round 6, fast)       1999937 del vars, 246067 del conss, 0 add conss, 7005 chg bounds, 0 chg sides, 0 chg coeffs, 456 upgd conss, 0 impls, 1 clqs
+(round 7, fast)       1999966 del vars, 246067 del conss, 0 add conss, 7005 chg bounds, 0 chg sides, 44 chg coeffs, 456 upgd conss, 0 impls, 18 clqs
+(round 8, fast)       1999978 del vars, 246090 del conss, 0 add conss, 7005 chg bounds, 0 chg sides, 54 chg coeffs, 456 upgd conss, 0 impls, 18 clqs
+(round 9, fast)       1999983 del vars, 246090 del conss, 0 add conss, 7005 chg bounds, 0 chg sides, 54 chg coeffs, 456 upgd conss, 0 impls, 18 clqs
+   (11.8s) running MILP presolver
+   (11.8s) MILP presolver found nothing
+   (11.8s) probing cycle finished: starting next cycle
+   (11.8s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (11.8s) no symmetry present
+presolving (10 rounds: 10 fast, 2 medium, 2 exhaustive):
+ 2000007 deleted vars, 246106 deleted constraints, 0 added constraints, 7005 tightened bounds, 0 added holes, 0 changed sides, 54 changed coefficients
+ 0 implications, 2 cliques
+presolved problem has 5 variables (5 bin, 0 int, 0 impl, 0 cont) and 3 constraints
+      3 constraints of type <logicor>
+Presolving Time: 7.70
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t11.9s|     1 |     0 |     0 |     - | trivial|   0 |   5 |   3 |   0 |   0 |  0 |   0 |   0 | 2.347423e+05 | 2.347450e+05 |   0.00%| unknown
+p11.9s|     1 |     0 |     0 |     - |  clique|   0 |   5 |   3 |   3 |   0 |  0 |   0 |   0 | 2.347423e+05 | 2.347435e+05 |   0.00%| unknown
+*11.9s|     1 |     0 |     3 |     - |    LP  |   0 |   5 |   3 |   3 |   0 |  0 |   0 |   0 | 2.347434e+05 | 2.347434e+05 |   0.00%| unknown
+ 11.9s|     1 |     0 |     3 |     - |  4591M |   0 |   5 |   3 |   3 |   0 |  0 |   0 |   0 | 2.347434e+05 | 2.347434e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 11.88
+Solving Nodes      : 1
+Primal Bound       : +2.34743416617852e+05 (5 solutions)
+Dual Bound         : +2.34743416617852e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.9 seconds, objective value 2.430027e+05
+presolving:
+(round 1, fast)       1995586 del vars, 9439 del conss, 0 add conss, 243 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+(round 2, fast)       1999993 del vars, 9445 del conss, 0 add conss, 243 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 9445 deleted constraints, 0 added constraints, 243 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.23
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.62
+Solving Nodes      : 0
+Primal Bound       : +2.34757265581514e+05 (3 solutions)
+Dual Bound         : +2.34757265581514e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.7 seconds, objective value 2.351805e+05
+presolving:
+(round 1, fast)       1999212 del vars, 1756 del conss, 0 add conss, 63 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 1756 deleted constraints, 0 added constraints, 63 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.74
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.43
+Solving Nodes      : 0
+Primal Bound       : +2.34757422186602e+05 (3 solutions)
+Dual Bound         : +2.34757422186602e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.9 seconds, objective value 2.346157e+05
+presolving:
+(round 1, fast)       1999988 del vars, 41 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (7.8s) running MILP presolver
+   (7.8s) MILP presolver found nothing
+(round 2, exhaustive) 1999988 del vars, 41 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 3 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 44 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.51
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.03
+Solving Nodes      : 0
+Primal Bound       : +2.34609401107639e+05 (3 solutions)
+Dual Bound         : +2.34609401107639e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.4 seconds, objective value 2.347573e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.59
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 8.02
+Solving Nodes      : 0
+Primal Bound       : +2.34757265581514e+05 (3 solutions)
+Dual Bound         : +2.34757265581514e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.2 seconds, objective value 2.346092e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.20
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 8.56
+Solving Nodes      : 0
+Primal Bound       : +2.34609244502552e+05 (3 solutions)
+Dual Bound         : +2.34609244502552e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.6 seconds, objective value 2.356196e+05
+presolving:
+(round 1, fast)       1998623 del vars, 2818 del conss, 0 add conss, 42 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 2818 deleted constraints, 0 added constraints, 42 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.00
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.96
+Solving Nodes      : 0
+Primal Bound       : +2.34609244502552e+05 (3 solutions)
+Dual Bound         : +2.34609244502552e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 21.5 seconds, objective value 4.900278e+05
+presolving:
+(round 1, fast)       1358577 del vars, 1041522 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 324385 clqs
+(round 2, fast)       1430031 del vars, 1511311 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 273188 clqs
+(round 3, fast)       1535064 del vars, 1586947 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 220309 clqs
+(round 4, fast)       1570666 del vars, 1627903 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 195375 clqs
+(round 5, fast)       1587992 del vars, 1643256 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 185068 clqs
+(round 6, fast)       1595349 del vars, 1651039 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 180175 clqs
+(round 7, fast)       1598950 del vars, 1654470 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 177898 clqs
+(round 8, fast)       1600693 del vars, 1656315 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 176690 clqs
+(round 9, fast)       1601532 del vars, 1657145 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 176149 clqs
+(round 10, fast)       1601938 del vars, 1657558 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 175873 clqs
+   (53.9s) running MILP presolver
+   (55.6s) MILP presolver (2 rounds): 0 aggregations, 139 fixings, 0 bound changes
+(round 11, medium)     1602275 del vars, 1657801 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 175637 clqs
+(round 12, exhaustive) 1602316 del vars, 1657976 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 340848 upgd conss, 0 impls, 175596 clqs
+(round 13, fast)       1668619 del vars, 1659375 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 0 chg coeffs, 340848 upgd conss, 0 impls, 175590 clqs
+(round 14, fast)       1681508 del vars, 1659375 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 62070 chg coeffs, 340848 upgd conss, 0 impls, 213504 clqs
+(round 15, fast)       1689367 del vars, 1675782 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 66841 chg coeffs, 340848 upgd conss, 0 impls, 214314 clqs
+(round 16, fast)       1694365 del vars, 1680029 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 68306 chg coeffs, 340848 upgd conss, 0 impls, 212185 clqs
+(round 17, fast)       1696169 del vars, 1682098 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 69362 chg coeffs, 340848 upgd conss, 0 impls, 211947 clqs
+(round 18, fast)       1696921 del vars, 1682983 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 69828 chg coeffs, 340848 upgd conss, 0 impls, 211816 clqs
+(round 19, fast)       1697253 del vars, 1683382 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 69989 chg coeffs, 340848 upgd conss, 0 impls, 211710 clqs
+   (72.8s) running MILP presolver
+   (74.1s) MILP presolver (2 rounds): 0 aggregations, 50 fixings, 0 bound changes
+(round 20, medium)     1700054 del vars, 1685785 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 70103 chg coeffs, 340848 upgd conss, 0 impls, 209380 clqs
+(round 21, fast)       1700428 del vars, 1686310 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 70491 chg coeffs, 340848 upgd conss, 0 impls, 209400 clqs
+(round 22, medium)     1701005 del vars, 1686866 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 70611 chg coeffs, 340848 upgd conss, 0 impls, 209041 clqs
+(round 23, exhaustive) 1702341 del vars, 1687032 del conss, 0 add conss, 341748 chg bounds, 0 chg sides, 70700 chg coeffs, 340849 upgd conss, 0 impls, 208990 clqs
+   (96.7s) probing: 52/303561 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (96.7s) probing aborted: 50/50 successive totally useless probings
+   (98.1s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (99.9s) no symmetry present
+presolving (24 rounds: 24 fast, 6 medium, 3 exhaustive):
+ 1702613 deleted vars, 1687213 deleted constraints, 0 added constraints, 341748 tightened bounds, 0 added holes, 0 changed sides, 71887 changed coefficients
+ 0 implications, 209751 cliques
+presolved problem has 303334 variables (303334 bin, 0 int, 0 impl, 0 cont) and 311601 constraints
+ 162643 constraints of type <setppc>
+ 148958 constraints of type <logicor>
+Presolving Time: 88.31
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 103s|     1 |     0 |     0 |     - | trivial|   0 | 303k| 311k|   0 |   0 |  0 |   0 |   0 | 1.890703e+05 | 3.325693e+05 |  75.90%| unknown
+p1531s|     1 |     0 |     0 |     - |   locks|   0 | 303k| 311k| 311k|   0 |  0 |   0 |   0 | 1.890703e+05 | 2.530759e+05 |  33.85%| unknown
+i1614s|     1 |     0 |  9836 |     - |  oneopt|   0 | 303k| 311k| 311k|   0 |  0 |   0 |   0 | 1.890703e+05 | 2.524527e+05 |  33.52%| unknown
+*2633s|     1 |     0 |228187 |     - |    LP  |   0 | 303k| 311k| 311k|   0 |  0 |   0 |   0 | 2.345635e+05 | 2.345635e+05 |   0.00%| unknown
+ 2633s|     1 |     0 |228187 |     - |  6957M |   0 | 303k| 311k| 311k|   0 |  0 |   0 |   0 | 2.345635e+05 | 2.345635e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2632.80
+Solving Nodes      : 1
+Primal Bound       : +2.34563480557510e+05 (6 solutions)
+Dual Bound         : +2.34563480557510e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.6 seconds, objective value 2.453574e+05
+presolving:
+(round 1, fast)       1986116 del vars, 38278 del conss, 0 add conss, 1117 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 16 clqs
+(round 2, fast)       1999937 del vars, 38323 del conss, 0 add conss, 1117 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999981 del vars, 38323 del conss, 0 add conss, 1117 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (7.3s) running MILP presolver
+   (7.3s) MILP presolver found nothing
+(round 4, exhaustive) 1999981 del vars, 38323 del conss, 0 add conss, 1117 chg bounds, 0 chg sides, 0 chg coeffs, 6 upgd conss, 0 impls, 0 clqs
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 38329 deleted constraints, 0 added constraints, 1117 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.30
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 8.27
+Solving Nodes      : 0
+Primal Bound       : +2.34608621218699e+05 (3 solutions)
+Dual Bound         : +2.34608621218699e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.7 seconds, objective value 2.362330e+05
+presolving:
+(round 1, fast)       1997864 del vars, 5225 del conss, 0 add conss, 85 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+(round 2, fast)       1999999 del vars, 5226 del conss, 0 add conss, 85 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 5226 deleted constraints, 0 added constraints, 85 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.20
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.89
+Solving Nodes      : 0
+Primal Bound       : +2.34608825517562e+05 (3 solutions)
+Dual Bound         : +2.34608825517562e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.0 seconds, objective value 2.345635e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.47
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.36
+Solving Nodes      : 0
+Primal Bound       : +2.34563480557513e+05 (3 solutions)
+Dual Bound         : +2.34563480557513e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.2 seconds, objective value 2.346082e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.22
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.43
+Solving Nodes      : 0
+Primal Bound       : +2.34608202233710e+05 (3 solutions)
+Dual Bound         : +2.34608202233710e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.0 seconds, objective value 2.345635e+05
+presolving:
+(round 1, fast)       1999996 del vars, 8 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (7.0s) running MILP presolver
+   (7.0s) MILP presolver found nothing
+(round 2, exhaustive) 1999996 del vars, 8 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 1 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 9 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.98
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.99
+Solving Nodes      : 0
+Primal Bound       : +2.34562589071296e+05 (3 solutions)
+Dual Bound         : +2.34562589071296e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 6.1 seconds, objective value 2.355729e+05
+presolving:
+(round 1, fast)       1998623 del vars, 2818 del conss, 0 add conss, 42 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 2818 deleted constraints, 0 added constraints, 42 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.35
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 8.39
+Solving Nodes      : 0
+Primal Bound       : +2.34562589071296e+05 (3 solutions)
+Dual Bound         : +2.34562589071296e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 15.1 seconds, objective value 4.901297e+05
+presolving:
+(round 1, fast)       1358681 del vars, 1041770 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 324210 clqs
+(round 2, fast)       1430171 del vars, 1511628 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 273000 clqs
+(round 3, fast)       1535346 del vars, 1587360 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 220040 clqs
+(round 4, fast)       1570935 del vars, 1628308 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 195133 clqs
+(round 5, fast)       1588298 del vars, 1643669 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 184812 clqs
+(round 6, fast)       1595710 del vars, 1651486 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 179899 clqs
+(round 7, fast)       1599321 del vars, 1654931 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 177645 clqs
+(round 8, fast)       1601020 del vars, 1656721 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 176451 clqs
+(round 9, fast)       1601841 del vars, 1657539 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 175910 clqs
+(round 10, fast)       1602261 del vars, 1657974 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 175629 clqs
+   (40.9s) running MILP presolver
+   (42.2s) MILP presolver (2 rounds): 0 aggregations, 137 fixings, 0 bound changes
+(round 11, medium)     1602609 del vars, 1658219 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 175384 clqs
+(round 12, exhaustive) 1602646 del vars, 1658391 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 340429 upgd conss, 0 impls, 175347 clqs
+(round 13, fast)       1668972 del vars, 1659788 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 0 chg coeffs, 340429 upgd conss, 0 impls, 175341 clqs
+(round 14, fast)       1681882 del vars, 1659788 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 62098 chg coeffs, 340429 upgd conss, 0 impls, 213257 clqs
+(round 15, fast)       1689750 del vars, 1676237 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 66871 chg coeffs, 340429 upgd conss, 0 impls, 214091 clqs
+(round 16, fast)       1694815 del vars, 1680530 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 68346 chg coeffs, 340429 upgd conss, 0 impls, 211901 clqs
+(round 17, fast)       1696655 del vars, 1682659 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 69419 chg coeffs, 340429 upgd conss, 0 impls, 211636 clqs
+(round 18, fast)       1697432 del vars, 1683564 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 69889 chg coeffs, 340429 upgd conss, 0 impls, 211495 clqs
+(round 19, fast)       1697780 del vars, 1683986 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 70063 chg coeffs, 340429 upgd conss, 0 impls, 211401 clqs
+   (58.0s) running MILP presolver
+   (59.2s) MILP presolver (2 rounds): 0 aggregations, 51 fixings, 0 bound changes
+(round 20, medium)     1700575 del vars, 1686384 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 70174 chg coeffs, 340429 upgd conss, 0 impls, 209062 clqs
+(round 21, fast)       1700962 del vars, 1686913 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 70566 chg coeffs, 340429 upgd conss, 0 impls, 209079 clqs
+(round 22, medium)     1701532 del vars, 1687468 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 70690 chg coeffs, 340429 upgd conss, 0 impls, 208726 clqs
+(round 23, exhaustive) 1702891 del vars, 1687626 del conss, 0 add conss, 341847 chg bounds, 0 chg sides, 70776 chg coeffs, 340430 upgd conss, 0 impls, 208674 clqs
+   (79.7s) probing: 52/303003 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (79.7s) probing aborted: 50/50 successive totally useless probings
+   (81.2s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (83.2s) no symmetry present
+presolving (24 rounds: 24 fast, 6 medium, 3 exhaustive):
+ 1703193 deleted vars, 1687806 deleted constraints, 0 added constraints, 341847 tightened bounds, 0 added holes, 0 changed sides, 72021 changed coefficients
+ 0 implications, 209466 cliques
+presolved problem has 302776 variables (302776 bin, 0 int, 0 impl, 0 cont) and 310997 constraints
+ 162313 constraints of type <setppc>
+ 148684 constraints of type <logicor>
+Presolving Time: 75.58
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t87.0s|     1 |     0 |     0 |     - | trivial|   0 | 302k| 310k|   0 |   0 |  0 |   0 |   0 | 1.891433e+05 | 3.324282e+05 |  75.75%| unknown
+p1259s|     1 |     0 |     0 |     - |   locks|   0 | 302k| 310k| 310k|   0 |  0 |   0 |   0 | 1.891433e+05 | 2.530740e+05 |  33.80%| unknown
+i1331s|     1 |     0 |  9757 |     - |  oneopt|   0 | 302k| 310k| 310k|   0 |  0 |   0 |   0 | 1.891433e+05 | 2.524543e+05 |  33.47%| unknown
+*2387s|     1 |     0 |227539 |     - |    LP  |   0 | 302k| 310k| 310k|   0 |  0 |   0 |   0 | 2.345624e+05 | 2.345624e+05 |   0.00%| unknown
+ 2387s|     1 |     0 |227539 |     - |  7013M |   0 | 302k| 310k| 310k|   0 |  0 |   0 |   0 | 2.345624e+05 | 2.345624e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2386.68
+Solving Nodes      : 1
+Primal Bound       : +2.34562406855525e+05 (6 solutions)
+Dual Bound         : +2.34562406855525e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 4.5 seconds, objective value 2.453112e+05
+presolving:
+(round 1, fast)       1986117 del vars, 38277 del conss, 0 add conss, 1118 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 16 clqs
+(round 2, fast)       1999936 del vars, 38323 del conss, 0 add conss, 1118 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999981 del vars, 38323 del conss, 0 add conss, 1118 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (5.9s) running MILP presolver
+   (5.9s) MILP presolver found nothing
+(round 4, exhaustive) 1999981 del vars, 38323 del conss, 0 add conss, 1118 chg bounds, 0 chg sides, 0 chg coeffs, 6 upgd conss, 0 impls, 0 clqs
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 38329 deleted constraints, 0 added constraints, 1118 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.47
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 6.82
+Solving Nodes      : 0
+Primal Bound       : +2.34562589071296e+05 (3 solutions)
+Dual Bound         : +2.34562589071296e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.7 seconds, objective value 2.361868e+05
+presolving:
+(round 1, fast)       1997864 del vars, 5225 del conss, 0 add conss, 85 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1 clqs
+(round 2, fast)       1999999 del vars, 5226 del conss, 0 add conss, 85 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 5226 deleted constraints, 0 added constraints, 85 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.89
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.54
+Solving Nodes      : 0
+Primal Bound       : +2.34562589071296e+05 (3 solutions)
+Dual Bound         : +2.34562589071296e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.9 seconds, objective value 2.345624e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.16
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.05
+Solving Nodes      : 0
+Primal Bound       : +2.34562406855529e+05 (3 solutions)
+Dual Bound         : +2.34562406855529e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.4 seconds, objective value 2.345626e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 3.81
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 6.80
+Solving Nodes      : 0
+Primal Bound       : +2.34562589071296e+05 (3 solutions)
+Dual Bound         : +2.34562589071296e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 5.7 seconds, objective value 2.345624e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 4.08
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.14
+Solving Nodes      : 0
+Primal Bound       : +2.34562406855529e+05 (3 solutions)
+Dual Bound         : +2.34562406855529e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 17.7 seconds, objective value 4.977091e+05
+presolving:
+(round 1, fast)       1347464 del vars, 1031093 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 326868 clqs
+(round 2, fast)       1418460 del vars, 1491107 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 276472 clqs
+(round 3, fast)       1521208 del vars, 1565834 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 224835 clqs
+(round 4, fast)       1555880 del vars, 1606321 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 200501 clqs
+(round 5, fast)       1572659 del vars, 1621180 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 190688 clqs
+(round 6, fast)       1579686 del vars, 1628659 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 185990 clqs
+(round 7, fast)       1583090 del vars, 1631986 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 183821 clqs
+(round 8, fast)       1584738 del vars, 1633719 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 182727 clqs
+(round 9, fast)       1585521 del vars, 1634500 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 182214 clqs
+(round 10, fast)       1585872 del vars, 1634856 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 181992 clqs
+   (44.8s) running MILP presolver
+   (46.2s) MILP presolver (2 rounds): 0 aggregations, 117 fixings, 0 bound changes
+(round 11, exhaustive) 1586169 del vars, 1635132 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 356880 upgd conss, 0 impls, 181821 clqs
+(round 12, fast)       1653980 del vars, 1636444 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 0 chg coeffs, 356880 upgd conss, 0 impls, 181808 clqs
+(round 13, fast)       1666768 del vars, 1636447 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 63841 chg coeffs, 356880 upgd conss, 0 impls, 220947 clqs
+(round 14, fast)       1674458 del vars, 1652734 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 68739 chg coeffs, 356880 upgd conss, 0 impls, 222005 clqs
+(round 15, fast)       1679442 del vars, 1656871 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 70193 chg coeffs, 356880 upgd conss, 0 impls, 219947 clqs
+(round 16, fast)       1681160 del vars, 1658871 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 71323 chg coeffs, 356880 upgd conss, 0 impls, 219804 clqs
+(round 17, fast)       1681860 del vars, 1659727 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 71760 chg coeffs, 356880 upgd conss, 0 impls, 219698 clqs
+(round 18, fast)       1682197 del vars, 1660096 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 71927 chg coeffs, 356880 upgd conss, 0 impls, 219618 clqs
+   (61.4s) running MILP presolver
+   (62.4s) MILP presolver (2 rounds): 0 aggregations, 44 fixings, 0 bound changes
+(round 19, medium)     1684903 del vars, 1662400 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 72050 chg coeffs, 356880 upgd conss, 0 impls, 217364 clqs
+(round 20, fast)       1685243 del vars, 1662916 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 72464 chg coeffs, 356880 upgd conss, 0 impls, 217425 clqs
+(round 21, medium)     1685779 del vars, 1663425 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 72571 chg coeffs, 356880 upgd conss, 0 impls, 217092 clqs
+(round 22, exhaustive) 1687254 del vars, 1663589 del conss, 0 add conss, 330652 chg bounds, 0 chg sides, 72671 chg coeffs, 356897 upgd conss, 0 impls, 217048 clqs
+   (79.2s) probing: 53/318449 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (79.2s) probing aborted: 50/50 successive totally useless probings
+   (80.3s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (81.8s) no symmetry present
+presolving (23 rounds: 23 fast, 5 medium, 3 exhaustive):
+ 1687565 deleted vars, 1663756 deleted constraints, 0 added constraints, 330652 tightened bounds, 0 added holes, 0 changed sides, 74050 changed coefficients
+ 0 implications, 217935 cliques
+presolved problem has 318237 variables (318237 bin, 0 int, 0 impl, 0 cont) and 328273 constraints
+ 169325 constraints of type <setppc>
+ 158948 constraints of type <logicor>
+Presolving Time: 71.94
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t84.6s|     1 |     0 |     0 |     - | trivial|   0 | 318k| 328k|   0 |   0 |  0 |   0 |   0 | 1.865798e+05 | 3.390645e+05 |  81.73%| unknown
+p1330s|     1 |     0 |     0 |     - |   locks|   0 | 318k| 328k| 328k|   0 |  0 |   0 |   0 | 1.865798e+05 | 2.544149e+05 |  36.36%| unknown
+i1406s|     1 |     0 | 11155 |     - |  oneopt|   0 | 318k| 328k| 328k|   0 |  0 |   0 |   0 | 1.865798e+05 | 2.537553e+05 |  36.00%| unknown
+*2487s|     1 |     0 |240148 |     - |    LP  |   0 | 318k| 328k| 328k|   0 |  0 |   0 |   0 | 2.345621e+05 | 2.345621e+05 |   0.00%| unknown
+ 2487s|     1 |     0 |240148 |     - |  6978M |   0 | 318k| 328k| 328k|   0 |  0 |   0 |   0 | 2.345621e+05 | 2.345621e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2487.14
+Solving Nodes      : 1
+Primal Bound       : +2.34562148453761e+05 (6 solutions)
+Dual Bound         : +2.34562148453761e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 23.1 seconds, objective value 2.762904e+05
+presolving:
+(round 1, fast)       1918605 del vars, 241452 del conss, 0 add conss, 7152 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 649 clqs
+(round 2, fast)       1996488 del vars, 243569 del conss, 0 add conss, 7152 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4 clqs
+(round 3, fast)       1998846 del vars, 243620 del conss, 0 add conss, 7152 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 4, fast)       1998948 del vars, 243621 del conss, 0 add conss, 7152 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 5, fast)       1998950 del vars, 243621 del conss, 0 add conss, 7152 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (33.5s) running MILP presolver
+   (33.5s) MILP presolver found nothing
+(round 6, exhaustive) 1998950 del vars, 243621 del conss, 0 add conss, 7152 chg bounds, 0 chg sides, 0 chg coeffs, 341 upgd conss, 0 impls, 0 clqs
+(round 7, fast)       1999958 del vars, 243934 del conss, 0 add conss, 7152 chg bounds, 0 chg sides, 0 chg coeffs, 341 upgd conss, 0 impls, 0 clqs
+(round 8, fast)       1999977 del vars, 243934 del conss, 0 add conss, 7152 chg bounds, 0 chg sides, 28 chg coeffs, 341 upgd conss, 0 impls, 12 clqs
+(round 9, fast)       1999985 del vars, 243950 del conss, 0 add conss, 7152 chg bounds, 0 chg sides, 37 chg coeffs, 341 upgd conss, 0 impls, 12 clqs
+(round 10, fast)       1999990 del vars, 243950 del conss, 0 add conss, 7152 chg bounds, 0 chg sides, 37 chg coeffs, 341 upgd conss, 0 impls, 12 clqs
+   (33.5s) running MILP presolver
+   (33.5s) MILP presolver found nothing
+   (33.5s) probing cycle finished: starting next cycle
+   (33.5s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (33.5s) no symmetry present
+presolving (11 rounds: 11 fast, 2 medium, 2 exhaustive):
+ 2000005 deleted vars, 243960 deleted constraints, 0 added constraints, 7152 tightened bounds, 0 added holes, 0 changed sides, 37 changed coefficients
+ 0 implications, 2 cliques
+presolved problem has 3 variables (3 bin, 0 int, 0 impl, 0 cont) and 2 constraints
+      2 constraints of type <logicor>
+Presolving Time: 24.02
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t33.6s|     1 |     0 |     0 |     - | trivial|   0 |   3 |   2 |   0 |   0 |  0 |   0 |   0 | 2.345611e+05 | 2.345627e+05 |   0.00%| unknown
+p33.6s|     1 |     0 |     0 |     - |  clique|   0 |   3 |   2 |   2 |   0 |  0 |   0 |   0 | 2.345611e+05 | 2.345620e+05 |   0.00%| unknown
+p33.6s|     1 |     0 |     0 |     - |   locks|   0 |   3 |   2 |   2 |   0 |  0 |   0 |   0 | 2.345611e+05 | 2.345618e+05 |   0.00%| unknown
+ 33.6s|     1 |     0 |     0 |     - |  4617M |   0 |   3 |   0 |   2 |   0 |  0 |   1 |   0 | 2.345618e+05 | 2.345618e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 33.64
+Solving Nodes      : 1
+Primal Bound       : +2.34561803259989e+05 (5 solutions)
+Dual Bound         : +2.34561803259989e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 30.7 seconds, objective value 2.424366e+05
+presolving:
+(round 1, fast)       1995687 del vars, 8157 del conss, 0 add conss, 187 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 3 clqs
+(round 2, fast)       1999990 del vars, 8161 del conss, 0 add conss, 187 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999994 del vars, 8161 del conss, 0 add conss, 187 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (36.5s) running MILP presolver
+   (36.5s) MILP presolver found nothing
+(round 4, exhaustive) 1999994 del vars, 8161 del conss, 0 add conss, 187 chg bounds, 0 chg sides, 0 chg coeffs, 2 upgd conss, 0 impls, 0 clqs
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 8163 deleted constraints, 0 added constraints, 187 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 22.85
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 40.69
+Solving Nodes      : 0
+Primal Bound       : +2.34562406855529e+05 (3 solutions)
+Dual Bound         : +2.34562406855529e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 23.5 seconds, objective value 2.345624e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 1999997 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 18.08
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 29.51
+Solving Nodes      : 0
+Primal Bound       : +2.34562406855529e+05 (3 solutions)
+Dual Bound         : +2.34562406855529e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 19.7 seconds, objective value 2.345615e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 14.54
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 24.11
+Solving Nodes      : 0
+Primal Bound       : +2.34561544858223e+05 (3 solutions)
+Dual Bound         : +2.34561544858223e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 21.4 seconds, objective value 2.345624e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 16.06
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 26.21
+Solving Nodes      : 0
+Primal Bound       : +2.34562406855529e+05 (3 solutions)
+Dual Bound         : +2.34562406855529e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 20.8 seconds, objective value 2.345615e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 15.76
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 25.47
+Solving Nodes      : 0
+Primal Bound       : +2.34561544858223e+05 (3 solutions)
+Dual Bound         : +2.34561544858223e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 21.9 seconds, objective value 2.362393e+05
+presolving:
+(round 1, fast)       1996169 del vars, 14641 del conss, 0 add conss, 886 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 2 clqs
+(round 2, fast)       1999998 del vars, 14643 del conss, 0 add conss, 886 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 14643 deleted constraints, 0 added constraints, 886 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 20.62
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 31.08
+Solving Nodes      : 0
+Primal Bound       : +2.34561544858222e+05 (3 solutions)
+Dual Bound         : +2.34561544858222e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 21.9 seconds, objective value 2.372659e+05
+presolving:
+(round 1, fast)       1996191 del vars, 9078 del conss, 0 add conss, 248 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 2 clqs
+(round 2, fast)       1999994 del vars, 9081 del conss, 0 add conss, 248 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999997 del vars, 9081 del conss, 0 add conss, 248 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (27.2s) running MILP presolver
+   (27.2s) MILP presolver found nothing
+(round 4, exhaustive) 1999997 del vars, 9081 del conss, 0 add conss, 248 chg bounds, 0 chg sides, 0 chg coeffs, 1 upgd conss, 0 impls, 0 clqs
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 9082 deleted constraints, 0 added constraints, 248 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 20.76
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 31.36
+Solving Nodes      : 0
+Primal Bound       : +2.34560640184385e+05 (3 solutions)
+Dual Bound         : +2.34560640184385e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 66.5 seconds, objective value 5.390556e+05
+presolving:
+(round 1, fast)       1269639 del vars, 1018761 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 320698 clqs
+(round 2, fast)       1348317 del vars, 1387350 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 272950 clqs
+(round 3, fast)       1439752 del vars, 1455472 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 230489 clqs
+(round 4, fast)       1469068 del vars, 1488934 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 212332 clqs
+(round 5, fast)       1482505 del vars, 1500990 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 205067 clqs
+(round 6, fast)       1487994 del vars, 1506964 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 201747 clqs
+(round 7, fast)       1490504 del vars, 1509357 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 200342 clqs
+(round 8, fast)       1491584 del vars, 1510542 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 199693 clqs
+(round 9, fast)       1492106 del vars, 1511021 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 199420 clqs
+   (163.8s) running MILP presolver
+   (170.0s) MILP presolver (2 rounds): 0 aggregations, 111 fixings, 0 bound changes
+(round 10, exhaustive) 1492440 del vars, 1511362 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 437150 upgd conss, 0 impls, 199212 clqs
+(round 11, fast)       1574625 del vars, 1512425 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 0 chg coeffs, 437150 upgd conss, 0 impls, 199197 clqs
+(round 12, fast)       1588573 del vars, 1512441 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 78993 chg coeffs, 437150 upgd conss, 0 impls, 246214 clqs
+(round 13, fast)       1596540 del vars, 1529951 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 84710 chg coeffs, 437150 upgd conss, 0 impls, 248313 clqs
+(round 14, fast)       1601600 del vars, 1533878 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 86506 chg coeffs, 437150 upgd conss, 0 impls, 246748 clqs
+(round 15, fast)       1603261 del vars, 1535828 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 87881 chg coeffs, 437150 upgd conss, 0 impls, 246876 clqs
+(round 16, fast)       1603884 del vars, 1536550 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 88340 chg coeffs, 437150 upgd conss, 0 impls, 246898 clqs
+   (230.7s) running MILP presolver
+   (235.9s) MILP presolver (2 rounds): 0 aggregations, 96 fixings, 0 bound changes
+(round 17, medium)     1606469 del vars, 1538844 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 88577 chg coeffs, 437150 upgd conss, 0 impls, 244929 clqs
+(round 18, fast)       1606754 del vars, 1539234 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 88924 chg coeffs, 437150 upgd conss, 0 impls, 244956 clqs
+(round 19, medium)     1607092 del vars, 1539555 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 89013 chg coeffs, 437150 upgd conss, 0 impls, 244774 clqs
+(round 20, exhaustive) 1608859 del vars, 1539652 del conss, 0 add conss, 251346 chg bounds, 0 chg sides, 89078 chg coeffs, 437165 upgd conss, 0 impls, 244759 clqs
+   (324.8s) probing: 52/397066 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (324.8s) probing aborted: 50/50 successive totally useless probings
+   (330.8s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (338.2s) no symmetry present
+presolving (21 rounds: 21 fast, 5 medium, 3 exhaustive):
+ 1609016 deleted vars, 1539750 deleted constraints, 0 added constraints, 251346 tightened bounds, 0 added holes, 0 changed sides, 90770 changed coefficients
+ 0 implications, 245934 cliques
+presolved problem has 396944 variables (396944 bin, 0 int, 0 impl, 0 cont) and 408781 constraints
+ 188058 constraints of type <setppc>
+ 220723 constraints of type <logicor>
+Presolving Time: 305.15
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 353s|     1 |     0 |     0 |     - | trivial|   0 | 396k| 408k|   0 |   0 |  0 |   0 |   0 | 1.727401e+05 | 3.697568e+05 | 114.05%| unknown
+p6918s|     1 |     0 |     0 |     - |   locks|   0 | 396k| 408k| 408k|   0 |  0 |   0 |   0 | 1.727401e+05 | 2.559795e+05 |  48.19%| unknown
+i7302s|     1 |     0 | 13514 |     - |  oneopt|   0 | 396k| 408k| 408k|   0 |  0 |   0 |   0 | 1.727401e+05 | 2.552377e+05 |  47.76%| unknown
+  197m|     1 |     0 |270838 |     - |  7338M |   0 | 396k| 408k| 408k|   0 |  0 |   0 |   0 | 1.727401e+05 | 2.552377e+05 |  47.76%| unknown
+(node 1) LP solver hit time limit in LP 2 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 11835.60
+Solving Nodes      : 1
+Primal Bound       : +2.55237708523020e+05 (5 solutions)
+Dual Bound         : +1.72740122560456e+05
+Gap                : 47.76 %
+feasible solution found by trivial heuristic after 17.6 seconds, objective value 3.603252e+05
+presolving:
+(round 1, fast)       1713950 del vars, 931025 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 17553 clqs
+(round 2, fast)       1935906 del vars, 968827 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 2706 clqs
+(round 3, fast)       1970879 del vars, 973542 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 711 clqs
+(round 4, fast)       1977026 del vars, 974080 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 471 clqs
+(round 5, fast)       1977748 del vars, 974204 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 423 clqs
+(round 6, fast)       1977922 del vars, 974221 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 416 clqs
+(round 7, fast)       1977945 del vars, 974228 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 414 clqs
+   (31.2s) running MILP presolver
+   (31.2s) MILP presolver (1 rounds): 0 aggregations, 3 fixings, 0 bound changes
+(round 8, exhaustive) 1977958 del vars, 974229 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 0 chg coeffs, 7843 upgd conss, 0 impls, 414 clqs
+(round 9, fast)       1994948 del vars, 978487 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 0 chg coeffs, 7843 upgd conss, 0 impls, 414 clqs
+(round 10, fast)       1997134 del vars, 978487 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 3513 chg coeffs, 7843 upgd conss, 0 impls, 1594 clqs
+(round 11, fast)       1998342 del vars, 980503 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 4134 chg coeffs, 7843 upgd conss, 0 impls, 1460 clqs
+(round 12, fast)       1998849 del vars, 980612 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 4155 chg coeffs, 7843 upgd conss, 0 impls, 1376 clqs
+(round 13, fast)       1998889 del vars, 980636 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 4162 chg coeffs, 7843 upgd conss, 0 impls, 1373 clqs
+(round 14, fast)       1998899 del vars, 980637 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 4162 chg coeffs, 7843 upgd conss, 0 impls, 1370 clqs
+(round 15, fast)       1998902 del vars, 980640 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 4163 chg coeffs, 7843 upgd conss, 0 impls, 1369 clqs
+   (31.5s) running MILP presolver
+   (31.5s) MILP presolver found nothing
+(round 16, medium)     1998973 del vars, 980688 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 4163 chg coeffs, 7843 upgd conss, 0 impls, 1317 clqs
+(round 17, fast)       1998977 del vars, 980692 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 4163 chg coeffs, 7843 upgd conss, 0 impls, 1317 clqs
+(round 18, fast)       1998979 del vars, 980692 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 4163 chg coeffs, 7843 upgd conss, 0 impls, 1317 clqs
+(round 19, medium)     1998985 del vars, 980696 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 4163 chg coeffs, 7843 upgd conss, 0 impls, 1312 clqs
+(round 20, medium)     1998988 del vars, 980699 del conss, 0 add conss, 49889 chg bounds, 0 chg sides, 4163 chg coeffs, 7843 upgd conss, 0 impls, 1310 clqs
+   (31.6s) probing: 51/1955 (2.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (31.6s) probing aborted: 50/50 successive totally useless probings
+   (31.6s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (31.6s) no symmetry present
+presolving (21 rounds: 21 fast, 5 medium, 2 exhaustive):
+ 2000929 deleted vars, 982062 deleted constraints, 0 added constraints, 49889 tightened bounds, 0 added holes, 0 changed sides, 4163 changed coefficients
+ 0 implications, 7 cliques
+presolved problem has 14 variables (14 bin, 0 int, 0 impl, 0 cont) and 10 constraints
+      2 constraints of type <setppc>
+      8 constraints of type <logicor>
+Presolving Time: 22.80
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t32.2s|     1 |     0 |     0 |     - | trivial|   0 |  14 |  10 |   0 |   0 |  0 |   0 |   0 | 2.338275e+05 | 2.338322e+05 |   0.00%| unknown
+p32.2s|     1 |     0 |     0 |     - |  clique|   0 |  14 |  10 |  10 |   0 |  0 |   0 |   0 | 2.338275e+05 | 2.338295e+05 |   0.00%| unknown
+p32.2s|     1 |     0 |     0 |     - |   locks|   0 |  14 |  10 |  10 |   0 |  0 |   0 |   0 | 2.338275e+05 | 2.338294e+05 |   0.00%| unknown
+*32.2s|     1 |     0 |     9 |     - |    LP  |   0 |  14 |  10 |  10 |   0 |  0 |   2 |   0 | 2.338291e+05 | 2.338291e+05 |   0.00%| unknown
+ 32.2s|     1 |     0 |     9 |     - |  4982M |   0 |  14 |  10 |  10 |   0 |  0 |   2 |   0 | 2.338291e+05 | 2.338291e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 32.24
+Solving Nodes      : 1
+Primal Bound       : +2.33829068386519e+05 (6 solutions)
+Dual Bound         : +2.33829068386519e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 10.7 seconds, objective value 2.345606e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 7.30
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 12.70
+Solving Nodes      : 0
+Primal Bound       : +2.34560640184385e+05 (3 solutions)
+Dual Bound         : +2.34560640184385e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 10.4 seconds, objective value 2.563306e+05
+presolving:
+(round 1, fast)       1995987 del vars, 15592 del conss, 0 add conss, 127 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4 clqs
+(round 2, fast)       1995987 del vars, 15719 del conss, 0 add conss, 127 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4 clqs
+(round 3, fast)       1996368 del vars, 15719 del conss, 0 add conss, 127 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4 clqs
+   (12.4s) running MILP presolver
+   (12.4s) MILP presolver found nothing
+(round 4, exhaustive) 1996368 del vars, 15719 del conss, 0 add conss, 127 chg bounds, 0 chg sides, 0 chg coeffs, 912 upgd conss, 0 impls, 4 clqs
+(round 5, fast)       1999984 del vars, 16619 del conss, 0 add conss, 127 chg bounds, 0 chg sides, 0 chg coeffs, 912 upgd conss, 0 impls, 4 clqs
+(round 6, fast)       1999988 del vars, 16619 del conss, 0 add conss, 127 chg bounds, 0 chg sides, 16 chg coeffs, 912 upgd conss, 0 impls, 8 clqs
+(round 7, fast)       1999994 del vars, 16625 del conss, 0 add conss, 127 chg bounds, 0 chg sides, 18 chg coeffs, 912 upgd conss, 0 impls, 6 clqs
+   (12.4s) running MILP presolver
+   (12.4s) MILP presolver found nothing
+   (12.4s) probing cycle finished: starting next cycle
+   (12.4s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (12.4s) no symmetry present
+presolving (8 rounds: 8 fast, 2 medium, 2 exhaustive):
+ 1999998 deleted vars, 16628 deleted constraints, 0 added constraints, 127 tightened bounds, 0 added holes, 0 changed sides, 18 changed coefficients
+ 0 implications, 3 cliques
+presolved problem has 4 variables (4 bin, 0 int, 0 impl, 0 cont) and 3 constraints
+      1 constraints of type <setppc>
+      2 constraints of type <logicor>
+Presolving Time: 8.38
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t12.5s|     1 |     0 |     0 |     - | trivial|   0 |   4 |   3 |   0 |   0 |  0 |   0 |   0 | 2.547113e+05 | 2.547132e+05 |   0.00%| unknown
+p12.5s|     1 |     0 |     0 |     - |  clique|   0 |   4 |   3 |   3 |   0 |  0 |   0 |   0 | 2.547113e+05 | 2.547126e+05 |   0.00%| unknown
+p12.5s|     1 |     0 |     0 |     - | vbounds|   0 |   4 |   3 |   3 |   0 |  0 |   0 |   0 | 2.547113e+05 | 2.547120e+05 |   0.00%| unknown
+ 12.5s|     1 |     0 |     0 |     - |  4442M |   0 |   4 |   0 |   3 |   0 |  0 |   0 |   0 | 2.547120e+05 | 2.547120e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 12.50
+Solving Nodes      : 1
+Primal Bound       : +2.54712004678202e+05 (5 solutions)
+Dual Bound         : +2.54712004678202e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 10.5 seconds, objective value 2.547154e+05
+presolving:
+(round 1, fast)       1999984 del vars, 51 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (12.0s) running MILP presolver
+   (12.0s) MILP presolver found nothing
+(round 2, exhaustive) 1999984 del vars, 51 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 4 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 55 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 8.54
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 14.10
+Solving Nodes      : 0
+Primal Bound       : +2.54711100004364e+05 (3 solutions)
+Dual Bound         : +2.54711100004364e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 10.9 seconds, objective value 2.340684e+05
+presolving:
+(round 1, fast)       1999715 del vars, 376 del conss, 0 add conss, 10 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 376 deleted constraints, 0 added constraints, 10 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 8.73
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 14.28
+Solving Nodes      : 0
+Primal Bound       : +2.33829068386518e+05 (3 solutions)
+Dual Bound         : +2.33829068386518e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 11.0 seconds, objective value 2.577984e+05
+presolving:
+(round 1, fast)       1964138 del vars, 124763 del conss, 0 add conss, 2517 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 40 clqs
+(round 2, fast)       1999849 del vars, 124905 del conss, 0 add conss, 2517 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999989 del vars, 124906 del conss, 0 add conss, 2517 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 4, fast)       1999991 del vars, 124906 del conss, 0 add conss, 2517 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (14.9s) running MILP presolver
+   (14.9s) MILP presolver found nothing
+(round 5, exhaustive) 1999991 del vars, 124906 del conss, 0 add conss, 2517 chg bounds, 0 chg sides, 0 chg coeffs, 3 upgd conss, 0 impls, 0 clqs
+presolving (6 rounds: 6 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 124909 deleted constraints, 0 added constraints, 2517 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 11.10
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 16.94
+Solving Nodes      : 0
+Primal Bound       : +2.33819132014186e+05 (3 solutions)
+Dual Bound         : +2.33819132014186e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.7 seconds, objective value 2.382110e+05
+presolving:
+(round 1, fast)       1992360 del vars, 23622 del conss, 0 add conss, 1120 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 6 clqs
+(round 2, fast)       1999983 del vars, 23634 del conss, 0 add conss, 1120 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       1999994 del vars, 23634 del conss, 0 add conss, 1120 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (11.4s) running MILP presolver
+   (11.4s) MILP presolver found nothing
+(round 4, exhaustive) 1999994 del vars, 23634 del conss, 0 add conss, 1120 chg bounds, 0 chg sides, 0 chg coeffs, 2 upgd conss, 0 impls, 0 clqs
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 23636 deleted constraints, 0 added constraints, 1120 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 8.38
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 12.97
+Solving Nodes      : 0
+Primal Bound       : +2.33825068582539e+05 (3 solutions)
+Dual Bound         : +2.33825068582539e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 30.2 seconds, objective value 4.909132e+05
+presolving:
+(round 1, fast)       1352769 del vars, 1035443 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 326408 clqs
+(round 2, fast)       1423863 del vars, 1501334 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 275606 clqs
+(round 3, fast)       1527906 del vars, 1576947 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 223085 clqs
+(round 4, fast)       1563071 del vars, 1617893 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 198352 clqs
+(round 5, fast)       1580388 del vars, 1633236 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 188111 clqs
+(round 6, fast)       1587743 del vars, 1641165 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 183157 clqs
+(round 7, fast)       1591402 del vars, 1644615 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 180893 clqs
+(round 8, fast)       1593081 del vars, 1646450 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 179708 clqs
+(round 9, fast)       1593923 del vars, 1647316 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 179131 clqs
+(round 10, fast)       1594338 del vars, 1647755 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 178840 clqs
+   (74.5s) running MILP presolver
+   (77.0s) MILP presolver (2 rounds): 0 aggregations, 148 fixings, 0 bound changes
+(round 11, medium)     1594699 del vars, 1647980 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 178623 clqs
+(round 12, exhaustive) 1594738 del vars, 1648155 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 348446 upgd conss, 0 impls, 178584 clqs
+(round 13, fast)       1661886 del vars, 1649511 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 0 chg coeffs, 348446 upgd conss, 0 impls, 178575 clqs
+(round 14, fast)       1674802 del vars, 1649513 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 63053 chg coeffs, 348446 upgd conss, 0 impls, 217204 clqs
+(round 15, fast)       1682674 del vars, 1665925 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 67912 chg coeffs, 348446 upgd conss, 0 impls, 218155 clqs
+(round 16, fast)       1687726 del vars, 1670200 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 69437 chg coeffs, 348446 upgd conss, 0 impls, 216003 clqs
+(round 17, fast)       1689518 del vars, 1672261 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 70503 chg coeffs, 348446 upgd conss, 0 impls, 215818 clqs
+(round 18, fast)       1690187 del vars, 1673055 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 70974 chg coeffs, 348446 upgd conss, 0 impls, 215765 clqs
+(round 19, fast)       1690478 del vars, 1673393 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 71127 chg coeffs, 348446 upgd conss, 0 impls, 215696 clqs
+   (103.4s) running MILP presolver
+   (105.1s) MILP presolver (2 rounds): 0 aggregations, 46 fixings, 0 bound changes
+(round 20, medium)     1693243 del vars, 1675734 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 71220 chg coeffs, 348446 upgd conss, 0 impls, 213406 clqs
+(round 21, fast)       1693617 del vars, 1676274 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 71615 chg coeffs, 348446 upgd conss, 0 impls, 213430 clqs
+(round 22, medium)     1694137 del vars, 1676796 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 71721 chg coeffs, 348446 upgd conss, 0 impls, 213083 clqs
+(round 23, exhaustive) 1695541 del vars, 1676983 del conss, 0 add conss, 336057 chg bounds, 0 chg sides, 71800 chg coeffs, 348447 upgd conss, 0 impls, 213021 clqs
+   (138.1s) probing: 51/310359 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (138.1s) probing aborted: 50/50 successive totally useless probings
+   (140.4s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (143.3s) no symmetry present
+presolving (24 rounds: 24 fast, 6 medium, 3 exhaustive):
+ 1695815 deleted vars, 1677154 deleted constraints, 0 added constraints, 336057 tightened bounds, 0 added holes, 0 changed sides, 73050 changed coefficients
+ 0 implications, 213845 cliques
+presolved problem has 310131 variables (310131 bin, 0 int, 0 impl, 0 cont) and 319438 constraints
+ 165829 constraints of type <setppc>
+ 153609 constraints of type <logicor>
+Presolving Time: 126.82
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 148s|     1 |     0 |     0 |     - | trivial|   0 | 310k| 319k|   0 |   0 |  0 |   0 |   0 | 1.865651e+05 | 3.334255e+05 |  78.72%| unknown
+p2158s|     1 |     0 |     0 |     - |   locks|   0 | 310k| 319k| 319k|   0 |  0 |   0 |   0 | 1.865651e+05 | 2.517679e+05 |  34.95%| unknown
+i2262s|     1 |     0 |  9797 |     - |  oneopt|   0 | 310k| 319k| 319k|   0 |  0 |   0 |   0 | 1.865651e+05 | 2.511586e+05 |  34.62%| unknown
+*3965s|     1 |     0 |232707 |     - |    LP  |   0 | 310k| 319k| 319k|   0 |  0 |   0 |   0 | 2.329188e+05 | 2.329188e+05 |   0.00%| unknown
+ 3965s|     1 |     0 |232707 |     - |  6939M |   0 | 310k| 319k| 319k|   0 |  0 |   0 |   0 | 2.329188e+05 | 2.329188e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 3964.85
+Solving Nodes      : 1
+Primal Bound       : +2.32918782656924e+05 (6 solutions)
+Dual Bound         : +2.32918782656924e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.8 seconds, objective value 2.338191e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.22
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 10.84
+Solving Nodes      : 0
+Primal Bound       : +2.33819132014186e+05 (3 solutions)
+Dual Bound         : +2.33819132014186e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.1 seconds, objective value 2.329148e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.19
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.86
+Solving Nodes      : 0
+Primal Bound       : +2.32914782852947e+05 (3 solutions)
+Dual Bound         : +2.32914782852947e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.9 seconds, objective value 2.329048e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.61
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.71
+Solving Nodes      : 0
+Primal Bound       : +2.32904846480615e+05 (3 solutions)
+Dual Bound         : +2.32904846480615e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.1 seconds, objective value 2.404464e+05
+presolving:
+(round 1, fast)       1997033 del vars, 4872 del conss, 0 add conss, 125 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       1999998 del vars, 4874 del conss, 0 add conss, 125 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 4874 deleted constraints, 0 added constraints, 125 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 7.25
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 11.80
+Solving Nodes      : 0
+Primal Bound       : +2.32904751227073e+05 (3 solutions)
+Dual Bound         : +2.32904751227073e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 9.3 seconds, objective value 2.329949e+05
+presolving:
+(round 1, fast)       1999868 del vars, 176 del conss, 0 add conss, 6 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 176 deleted constraints, 0 added constraints, 6 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 7.46
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 12.11
+Solving Nodes      : 0
+Primal Bound       : +2.32904846480615e+05 (3 solutions)
+Dual Bound         : +2.32904846480615e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 22.3 seconds, objective value 4.953859e+05
+presolving:
+(round 1, fast)       1348118 del vars, 1032090 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 326493 clqs
+(round 2, fast)       1419236 del vars, 1494002 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 275897 clqs
+(round 3, fast)       1522577 del vars, 1569286 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 223836 clqs
+(round 4, fast)       1557449 del vars, 1610082 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 199330 clqs
+(round 5, fast)       1574625 del vars, 1625184 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 189264 clqs
+(round 6, fast)       1581795 del vars, 1632911 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 184460 clqs
+(round 7, fast)       1585352 del vars, 1636265 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 182239 clqs
+(round 8, fast)       1586979 del vars, 1638039 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 181118 clqs
+(round 9, fast)       1587861 del vars, 1638895 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 180545 clqs
+(round 10, fast)       1588240 del vars, 1639283 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 180308 clqs
+   (60.8s) running MILP presolver
+   (62.7s) MILP presolver (2 rounds): 0 aggregations, 157 fixings, 0 bound changes
+(round 11, medium)     1588597 del vars, 1639479 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 180098 clqs
+(round 12, exhaustive) 1588644 del vars, 1639696 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 353832 upgd conss, 0 impls, 180051 clqs
+(round 13, fast)       1656765 del vars, 1641052 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 0 chg coeffs, 353832 upgd conss, 0 impls, 180040 clqs
+(round 14, fast)       1669632 del vars, 1641052 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 64037 chg coeffs, 353832 upgd conss, 0 impls, 219368 clqs
+(round 15, fast)       1677387 del vars, 1657408 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 68953 chg coeffs, 353832 upgd conss, 0 impls, 220461 clqs
+(round 16, fast)       1682411 del vars, 1661574 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 70504 chg coeffs, 353832 upgd conss, 0 impls, 218372 clqs
+(round 17, fast)       1684164 del vars, 1663663 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 71604 chg coeffs, 353832 upgd conss, 0 impls, 218216 clqs
+(round 18, fast)       1684838 del vars, 1664430 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 72044 chg coeffs, 353832 upgd conss, 0 impls, 218124 clqs
+(round 19, fast)       1685129 del vars, 1664767 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 72214 chg coeffs, 353832 upgd conss, 0 impls, 218091 clqs
+   (83.8s) running MILP presolver
+   (85.5s) MILP presolver (2 rounds): 0 aggregations, 43 fixings, 0 bound changes
+(round 20, medium)     1687825 del vars, 1667051 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 72319 chg coeffs, 353832 upgd conss, 0 impls, 215846 clqs
+(round 21, fast)       1688198 del vars, 1667587 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 72712 chg coeffs, 353832 upgd conss, 0 impls, 215872 clqs
+(round 22, medium)     1688712 del vars, 1668091 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 72821 chg coeffs, 353832 upgd conss, 0 impls, 215552 clqs
+(round 23, exhaustive) 1690159 del vars, 1668283 del conss, 0 add conss, 331300 chg bounds, 0 chg sides, 72905 chg coeffs, 353834 upgd conss, 0 impls, 215479 clqs
+   (111.9s) probing: 53/315653 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (111.9s) probing aborted: 50/50 successive totally useless probings
+   (113.7s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (116.0s) no symmetry present
+presolving (24 rounds: 24 fast, 6 medium, 3 exhaustive):
+ 1690415 deleted vars, 1668442 deleted constraints, 0 added constraints, 331300 tightened bounds, 0 added holes, 0 changed sides, 74212 changed coefficients
+ 0 implications, 216369 cliques
+presolved problem has 315457 variables (315457 bin, 0 int, 0 impl, 0 cont) and 325085 constraints
+ 167574 constraints of type <setppc>
+ 157511 constraints of type <logicor>
+Presolving Time: 105.22
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 121s|     1 |     0 |     0 |     - | trivial|   0 | 315k| 325k|   0 |   0 |  0 |   0 |   0 | 1.856596e+05 | 3.363078e+05 |  81.14%| unknown
+p2340s|     1 |     0 |     0 |     - |   locks|   0 | 315k| 325k| 325k|   0 |  0 |   0 |   0 | 1.856596e+05 | 2.525651e+05 |  36.04%| unknown
+i2470s|     1 |     0 | 10798 |     - |  oneopt|   0 | 315k| 325k| 325k|   0 |  0 |   0 |   0 | 1.856596e+05 | 2.519549e+05 |  35.71%| unknown
+*4196s|     1 |     0 |236710 |     - |    LP  |   0 | 315k| 325k| 325k|   0 |  0 |   0 |   0 | 2.328910e+05 | 2.328910e+05 |   0.00%| unknown
+ 4196s|     1 |     0 |236710 |     - |  6950M |   0 | 315k| 325k| 325k|   0 |  0 |   0 |   0 | 2.328910e+05 | 2.328910e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 4195.88
+Solving Nodes      : 1
+Primal Bound       : +2.32890986937068e+05 (6 solutions)
+Dual Bound         : +2.32890986937068e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 10.6 seconds, objective value 2.676655e+05
+presolving:
+(round 1, fast)       1931591 del vars, 200358 del conss, 0 add conss, 6140 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 454 clqs
+(round 2, fast)       1997497 del vars, 201937 del conss, 0 add conss, 6140 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4 clqs
+(round 3, fast)       1999246 del vars, 201971 del conss, 0 add conss, 6140 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 4, fast)       1999312 del vars, 201971 del conss, 0 add conss, 6140 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (15.5s) running MILP presolver
+   (15.5s) MILP presolver found nothing
+(round 5, exhaustive) 1999312 del vars, 201971 del conss, 0 add conss, 6140 chg bounds, 0 chg sides, 0 chg coeffs, 225 upgd conss, 0 impls, 0 clqs
+(round 6, fast)       1999976 del vars, 202180 del conss, 0 add conss, 6140 chg bounds, 0 chg sides, 0 chg coeffs, 225 upgd conss, 0 impls, 0 clqs
+(round 7, fast)       1999990 del vars, 202180 del conss, 0 add conss, 6140 chg bounds, 0 chg sides, 16 chg coeffs, 225 upgd conss, 0 impls, 4 clqs
+(round 8, fast)       1999996 del vars, 202192 del conss, 0 add conss, 6140 chg bounds, 0 chg sides, 22 chg coeffs, 225 upgd conss, 0 impls, 4 clqs
+(round 9, fast)       2000000 del vars, 202192 del conss, 0 add conss, 6140 chg bounds, 0 chg sides, 22 chg coeffs, 225 upgd conss, 0 impls, 4 clqs
+   (15.5s) running MILP presolver
+   (15.5s) MILP presolver found nothing
+   (15.5s) probing cycle finished: starting next cycle
+   (15.5s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (15.5s) no symmetry present
+presolving (10 rounds: 10 fast, 2 medium, 2 exhaustive):
+ 2000003 deleted vars, 202194 deleted constraints, 0 added constraints, 6140 tightened bounds, 0 added holes, 0 changed sides, 22 changed coefficients
+ 0 implications, 2 cliques
+presolved problem has 3 variables (3 bin, 0 int, 0 impl, 0 cont) and 2 constraints
+      2 constraints of type <logicor>
+Presolving Time: 10.42
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t15.6s|     1 |     0 |     0 |     - | trivial|   0 |   3 |   2 |   0 |   0 |  0 |   0 |   0 | 2.329027e+05 | 2.329035e+05 |   0.00%| unknown
+p15.6s|     1 |     0 |     0 |     - |  clique|   0 |   3 |   2 |   2 |   0 |  0 |   0 |   0 | 2.329027e+05 | 2.329032e+05 |   0.00%| unknown
+p15.6s|     1 |     0 |     0 |     - |   locks|   0 |   3 |   2 |   2 |   0 |  0 |   0 |   0 | 2.329027e+05 | 2.329030e+05 |   0.00%| unknown
+ 15.6s|     1 |     0 |     0 |     - |  4582M |   0 |   3 |   0 |   2 |   0 |  0 |   1 |   0 | 2.329030e+05 | 2.329030e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 15.62
+Solving Nodes      : 1
+Primal Bound       : +2.32903049697424e+05 (5 solutions)
+Dual Bound         : +2.32903049697424e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 7.9 seconds, objective value 2.329048e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.99
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 10.03
+Solving Nodes      : 0
+Primal Bound       : +2.32904751227073e+05 (3 solutions)
+Dual Bound         : +2.32904751227073e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.0 seconds, objective value 2.328892e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 5.59
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 9.89
+Solving Nodes      : 0
+Primal Bound       : +2.32889190153878e+05 (3 solutions)
+Dual Bound         : +2.32889190153878e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 9.1 seconds, objective value 2.328891e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.42
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 11.04
+Solving Nodes      : 0
+Primal Bound       : +2.32889094900336e+05 (3 solutions)
+Dual Bound         : +2.32889094900336e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 25.9 seconds, objective value 5.634482e+05
+presolving:
+(round 1, fast)       1235562 del vars, 1058375 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 312484 clqs
+(round 2, fast)       1330156 del vars, 1384210 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 261834 clqs
+(round 3, fast)       1421702 del vars, 1452842 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 221326 clqs
+(round 4, fast)       1451513 del vars, 1484129 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 204379 clqs
+(round 5, fast)       1464859 del vars, 1495986 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 197496 clqs
+(round 6, fast)       1470329 del vars, 1501500 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 194397 clqs
+(round 7, fast)       1472815 del vars, 1503830 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 193098 clqs
+(round 8, fast)       1473865 del vars, 1504841 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 192556 clqs
+(round 9, fast)       1474305 del vars, 1505207 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 192332 clqs
+   (65.0s) running MILP presolver
+   (67.1s) MILP presolver (2 rounds): 0 aggregations, 138 fixings, 0 bound changes
+(round 10, exhaustive) 1474625 del vars, 1505501 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 441645 upgd conss, 0 impls, 192184 clqs
+(round 11, fast)       1565236 del vars, 1506684 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 0 chg coeffs, 441645 upgd conss, 0 impls, 192171 clqs
+(round 12, fast)       1581563 del vars, 1506693 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 87046 chg coeffs, 441645 upgd conss, 0 impls, 243227 clqs
+(round 13, fast)       1591098 del vars, 1527226 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 93674 chg coeffs, 441645 upgd conss, 0 impls, 245524 clqs
+(round 14, fast)       1597225 del vars, 1532157 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 95843 chg coeffs, 441645 upgd conss, 0 impls, 243608 clqs
+(round 15, fast)       1599404 del vars, 1534595 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 97488 chg coeffs, 441645 upgd conss, 0 impls, 243670 clqs
+(round 16, fast)       1600233 del vars, 1535546 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 98113 chg coeffs, 441645 upgd conss, 0 impls, 243693 clqs
+(round 17, fast)       1600600 del vars, 1535901 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 98358 chg coeffs, 441645 upgd conss, 0 impls, 243677 clqs
+   (93.3s) running MILP presolver
+   (95.4s) MILP presolver (2 rounds): 0 aggregations, 37 fixings, 0 bound changes
+(round 18, medium)     1603321 del vars, 1538219 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 98498 chg coeffs, 441645 upgd conss, 0 impls, 241451 clqs
+(round 19, fast)       1603617 del vars, 1538670 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 98895 chg coeffs, 441645 upgd conss, 0 impls, 241539 clqs
+(round 20, medium)     1604006 del vars, 1539041 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 99001 chg coeffs, 441645 upgd conss, 0 impls, 241358 clqs
+(round 21, exhaustive) 1605847 del vars, 1539110 del conss, 0 add conss, 214870 chg bounds, 0 chg sides, 99079 chg coeffs, 441659 upgd conss, 0 impls, 241355 clqs
+   (126.9s) probing: 51/401075 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (126.9s) probing aborted: 50/50 successive totally useless probings
+   (128.9s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (131.7s) no symmetry present
+presolving (22 rounds: 22 fast, 5 medium, 3 exhaustive):
+ 1606106 deleted vars, 1539213 deleted constraints, 0 added constraints, 214870 tightened bounds, 0 added holes, 0 changed sides, 100945 changed coefficients
+ 0 implications, 242593 cliques
+presolved problem has 400940 variables (400940 bin, 0 int, 0 impl, 0 cont) and 407953 constraints
+ 179171 constraints of type <setppc>
+ 228782 constraints of type <logicor>
+Presolving Time: 118.16
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 137s|     1 |     0 |     0 |     - | trivial|   0 | 400k| 407k|   0 |   0 |  0 |   0 |   0 | 1.691669e+05 | 3.734311e+05 | 120.75%| unknown
+p2847s|     1 |     0 |     0 |     - |   locks|   0 | 400k| 407k| 407k|   0 |  0 |   0 |   0 | 1.691669e+05 | 2.543311e+05 |  50.34%| unknown
+i3034s|     1 |     0 | 14227 |     - |  oneopt|   0 | 400k| 407k| 407k|   0 |  0 |   0 |   0 | 1.691669e+05 | 2.535830e+05 |  49.90%| unknown
+*5686s|     1 |     0 |300346 |     - |    LP  |   0 | 400k| 407k| 407k|   0 |  0 |   0 |   0 | 2.310621e+05 | 2.310621e+05 |   0.00%| unknown
+ 5686s|     1 |     0 |300346 |     - |  7256M |   0 | 400k| 407k| 407k|   0 |  0 |   0 |   0 | 2.310621e+05 | 2.310621e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 5686.25
+Solving Nodes      : 1
+Primal Bound       : +2.31062129365095e+05 (6 solutions)
+Dual Bound         : +2.31062129365095e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 15.9 seconds, objective value 3.104557e+05
+presolving:
+(round 1, fast)       1790110 del vars, 1011707 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 12593 clqs
+(round 2, fast)       1966777 del vars, 1047887 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 1098 clqs
+(round 3, fast)       1995229 del vars, 1049405 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 70 clqs
+(round 4, fast)       1996816 del vars, 1049520 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 11 clqs
+(round 5, fast)       1996966 del vars, 1049536 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 10 clqs
+(round 6, fast)       1996995 del vars, 1049536 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 10 clqs
+   (26.1s) running MILP presolver
+   (26.1s) MILP presolver found nothing
+(round 7, exhaustive) 1996995 del vars, 1049536 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 0 chg coeffs, 1018 upgd conss, 0 impls, 10 clqs
+(round 8, fast)       1999835 del vars, 1050440 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 0 chg coeffs, 1018 upgd conss, 0 impls, 10 clqs
+(round 9, fast)       1999912 del vars, 1050440 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 108 chg coeffs, 1018 upgd conss, 0 impls, 47 clqs
+(round 10, fast)       1999953 del vars, 1050512 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 128 chg coeffs, 1018 upgd conss, 0 impls, 42 clqs
+(round 11, fast)       1999976 del vars, 1050515 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 128 chg coeffs, 1018 upgd conss, 0 impls, 39 clqs
+(round 12, fast)       1999977 del vars, 1050515 del conss, 0 add conss, 92858 chg bounds, 0 chg sides, 128 chg coeffs, 1018 upgd conss, 0 impls, 39 clqs
+   (26.1s) running MILP presolver
+   (26.1s) MILP presolver found nothing
+   (26.2s) probing: 51/56 (91.1%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (26.2s) probing aborted: 50/50 successive totally useless probings
+   (26.2s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (26.2s) no symmetry present
+presolving (13 rounds: 13 fast, 2 medium, 2 exhaustive):
+ 2000028 deleted vars, 1050550 deleted constraints, 0 added constraints, 92858 tightened bounds, 0 added holes, 0 changed sides, 128 changed coefficients
+ 0 implications, 4 cliques
+presolved problem has 5 variables (5 bin, 0 int, 0 impl, 0 cont) and 4 constraints
+      2 constraints of type <setppc>
+      2 constraints of type <logicor>
+Presolving Time: 17.73
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t26.3s|     1 |     0 |     0 |     - | trivial|   0 |   5 |   4 |   0 |   0 |  0 |   0 |   0 | 2.326905e+05 | 2.326917e+05 |   0.00%| unknown
+p26.3s|     1 |     0 |     0 |     - |  clique|   0 |   5 |   4 |   4 |   0 |  0 |   0 |   0 | 2.326905e+05 | 2.326911e+05 |   0.00%| unknown
+ 26.3s|     1 |     0 |     0 |     - |  5132M |   0 |   5 |   1 |   4 |   0 |  0 |   0 |   0 | 2.326911e+05 | 2.326911e+05 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 26.27
+Solving Nodes      : 1
+Primal Bound       : +2.32691080065624e+05 (4 solutions)
+Dual Bound         : +2.32691080065624e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.3 seconds, objective value 2.330530e+05
+presolving:
+(round 1, fast)       1999744 del vars, 672 del conss, 0 add conss, 44 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 672 deleted constraints, 0 added constraints, 44 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.59
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 10.85
+Solving Nodes      : 0
+Primal Bound       : +2.32889094900336e+05 (3 solutions)
+Dual Bound         : +2.32889094900336e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 9.3 seconds, objective value 2.367321e+05
+presolving:
+(round 1, fast)       1985307 del vars, 41709 del conss, 0 add conss, 1045 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 5 clqs
+(round 2, fast)       1999983 del vars, 41726 del conss, 0 add conss, 1045 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 2000000 deleted vars, 41726 deleted constraints, 0 added constraints, 1045 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 9.36
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 13.95
+Solving Nodes      : 0
+Primal Bound       : +2.32888999933045e+05 (3 solutions)
+Dual Bound         : +2.32888999933045e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.6 seconds, objective value 2.310202e+05
+presolving:
+(round 1, fast)       1999704 del vars, 1172 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (10.0s) running MILP presolver
+   (10.0s) MILP presolver found nothing
+(round 2, exhaustive) 1999704 del vars, 1172 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 74 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 2 medium, 2 exhaustive):
+ 2000000 deleted vars, 1246 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 7.32
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 11.18
+Solving Nodes      : 0
+Primal Bound       : +2.30882100023810e+05 (3 solutions)
+Dual Bound         : +2.30882100023810e+05
+Gap                : 0.00 %
+feasible solution found by trivial heuristic after 8.5 seconds, objective value 2.328890e+05
+presolving:
+presolving (1 rounds: 1 fast, 0 medium, 0 exhaustive):
+ 2000000 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+transformed 1/3 original solutions to the transformed problem space
+Presolving Time: 6.65
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 10.42
+Solving Nodes      : 0
+Primal Bound       : +2.32888999933046e+05 (3 solutions)
+Dual Bound         : +2.32888999933046e+05
+Gap                : 0.00 %
+presolving:
+presolving (0 rounds: 0 fast, 0 medium, 0 exhaustive):
+ 0 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolving was interrupted.
+Presolving Time: 0.02
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 3.12
+Solving Nodes      : 0
+Primal Bound       : +1.00000000000000e+20 (0 solutions)
+0.462424
+0.4966975
+0.5269295
+0.5 SC
+0.5 SC
+0.5 SC
+0.5 SC
+0.5 SC
+0.5 SC
+0.5 SC
+0.5 SC
+0.5 SC
+0.5 SC
+0.5 SC
+0.5 SC
+0.5 SC
+[459.1500098705292, 5232.296633005142, 8313.131188631058, 11027.766860485077, 16358.1632604599, 19696.14402961731, 22730.79131770134, 25734.828385591507, 28461.96607732773, 31905.82905936241, 44623.86493229866, 49133.47947525978, 53835.02897167206, 60043.25873994827]
+[273778.09725558857, 252518.55371246877, 251523.09100056713, 251389.15344033734, 238322.73500993333, 234757.42218660205, 234609.24450255177, 234562.58907129627, 234562.40685552533, 234561.54485822294, 233829.068386519, 232904.84648061485, 232889.0949003362, 230882.10002380982]

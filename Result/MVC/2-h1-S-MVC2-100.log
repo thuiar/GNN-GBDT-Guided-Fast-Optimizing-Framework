@@ -1,0 +1,36 @@
+nohup: ignoring input
+feasible solution found by trivial heuristic after 68.6 seconds, objective value 4.996566e+05
+presolving:
+(round 1, fast)       17431 del vars, 15004 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 2984987 clqs
+(round 2, fast)       25267 del vars, 59925 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 2940066 clqs
+   (185.8s) running MILP presolver
+   (218.2s) MILP presolver (2 rounds): 0 aggregations, 195 fixings, 0 bound changes
+(round 3, exhaustive) 25989 del vars, 62494 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 2937506 clqs
+(round 4, exhaustive) 25992 del vars, 62497 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 2937503 upgd conss, 0 impls, 2937503 clqs
+   (545.8s) probing: 51/974008 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (545.8s) probing aborted: 50/50 successive totally useless probings
+   (579.7s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (621.0s) no symmetry present
+presolving (5 rounds: 5 fast, 3 medium, 3 exhaustive):
+ 25992 deleted vars, 62497 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 2937503 cliques
+presolved problem has 974008 variables (974008 bin, 0 int, 0 impl, 0 cont) and 2937503 constraints
+2937503 constraints of type <setppc>
+Presolving Time: 606.48
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t 675s|     1 |     0 |     0 |     - | trivial|   0 | 974k|2937k|   0 |   0 |  0 |   0 |   0 | 5.174453e+03 | 4.914449e+05 |9397.52%| unknown
+p 404m|     1 |     0 |     0 |     - |   locks|   0 | 974k|2937k|2937k|   0 |  0 |   0 |   0 | 5.174453e+03 | 3.146621e+05 |5981.07%| unknown
+i 423m|     1 |     0 |  1126 |     - |  oneopt|   0 | 974k|2937k|2937k|   0 |  0 |   0 |   0 | 5.174453e+03 | 3.120502e+05 |5930.59%| unknown
+  998m|     1 |     0 |  1274k|     - |    10G |   0 | 974k|2937k|2937k|   0 |  0 |   0 |   0 | 5.174453e+03 | 3.120502e+05 |5930.59%| unknown
+(node 1) LP solver hit time limit in LP 2 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 59892.56
+Solving Nodes      : 1
+Primal Bound       : +3.12050247079965e+05 (5 solutions)
+Dual Bound         : +5.17445286937992e+03
+Gap                : 5930.59 %
+0.0
+[60219.669788360596]
+[312050.24707996455]
